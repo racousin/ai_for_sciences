@@ -8,15 +8,15 @@ The practical sessions are organized as Jupyter notebooks that can be executed d
 
 ## Schedule
 
-### Day 1 - Raphael Cousin (2pm - 5pm)
+### Day 1 (2pm - 5pm) - Raphael Cousin
 - **tp1.ipynb**: Optimization of machine learning problems (gradient descent, linear regression, neural network backpropagation, CPU vs GPU)
 - **tp2.ipynb**: Text representation, tokenizers, and byte-pair encoding (BPE)
 - **tp3.ipynb**: GPT architecture, one-shot learning with Hugging Face, and fine-tuning
 
-### Day 2
+### Day 2 (2pm - 5pm)
 To be defined
 
-### Day 3 - Raphael Cousin
+### Day 3 (2pm - 5pm) - Raphael Cousin
 - **tp1.ipynb**: MNIST classification (CNN vs MLP, data augmentation)
 - **tp2.ipynb**: Fine-tuning simplified AlphaFold
 - **tp3.ipynb**: Generative models
