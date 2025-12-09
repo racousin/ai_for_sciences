@@ -5,17 +5,17 @@ from .visualization import (
     plot_loss_history,
     plot_predictions,
     plot_gradient_step,
+    plot_nonlinear_data,
 )
 
 from .display import (
     print_model_params,
-    print_training_step,
-    print_gradient_info,
     print_device_comparison,
 )
 
 from .data import (
     generate_linear_data,
+    generate_nonlinear_data,
 )
 
 __all__ = [
@@ -24,11 +24,11 @@ __all__ = [
     "plot_loss_history",
     "plot_predictions",
     "plot_gradient_step",
+    "plot_nonlinear_data",
     # Display
     "print_model_params",
-    "print_training_step",
-    "print_gradient_info",
     "print_device_comparison",
     # Data
     "generate_linear_data",
+    "generate_nonlinear_data",
 ]

@@ -19,69 +19,11 @@ def print_model_params(model, title="Model Parameters"):
     for name, param in model.named_parameters():
         print(f"\n  {name}:")
         print(f"    Shape: {list(param.shape)}")
-        print(f"    Values: {param.data.numpy().flatten()[:5]}...")  # Show first 5 values
+        print(f"    Values: {param.data.flatten()[:5].tolist()}")
         print(f"    Requires grad: {param.requires_grad}")
         total_params += param.numel()
 
     print(f"\n  Total parameters: {total_params}")
-    print(f"{'='*50}\n")
-
-
-def print_training_step(epoch, loss, params_before=None, params_after=None, gradients=None):
-    """
-    Print detailed information about a training step.
-
-    Args:
-        epoch: Current epoch number
-        loss: Loss value
-        params_before: Dict of parameters before update
-        params_after: Dict of parameters after update
-        gradients: Dict of gradients
-    """
-    print(f"\n{'─'*40}")
-    print(f" Epoch {epoch}")
-    print(f"{'─'*40}")
-    print(f"  Loss: {loss:.6f}")
-
-    if gradients:
-        print(f"\n  Gradients:")
-        for name, grad in gradients.items():
-            if grad is not None:
-                print(f"    {name}: {grad.flatten()[:3].tolist()}...")
-
-    if params_before and params_after:
-        print(f"\n  Parameter Updates:")
-        for name in params_before:
-            before = params_before[name].flatten()[:3].tolist()
-            after = params_after[name].flatten()[:3].tolist()
-            print(f"    {name}:")
-            print(f"      Before: {before}...")
-            print(f"      After:  {after}...")
-
-
-def print_gradient_info(model):
-    """
-    Print gradient information for all model parameters.
-
-    Args:
-        model: PyTorch model after backward pass
-    """
-    print(f"\n{'='*50}")
-    print(" Gradient Information")
-    print(f"{'='*50}")
-
-    for name, param in model.named_parameters():
-        if param.grad is not None:
-            grad = param.grad
-            print(f"\n  {name}:")
-            print(f"    Gradient shape: {list(grad.shape)}")
-            print(f"    Gradient mean: {grad.mean().item():.6f}")
-            print(f"    Gradient std: {grad.std().item():.6f}")
-            print(f"    Gradient min: {grad.min().item():.6f}")
-            print(f"    Gradient max: {grad.max().item():.6f}")
-        else:
-            print(f"\n  {name}: No gradient computed")
-
     print(f"{'='*50}\n")
 
 
@@ -113,18 +55,3 @@ def print_device_comparison(cpu_time, gpu_time, speedup=None):
     print(f"  GPU: [{'█' * gpu_bar}{'░' * (cpu_bar - gpu_bar)}]")
 
     print(f"\n{'='*50}\n")
-
-
-def print_batch_info(batch_idx, total_batches, batch_loss, batch_size):
-    """
-    Print information about a training batch.
-
-    Args:
-        batch_idx: Current batch index
-        total_batches: Total number of batches
-        batch_loss: Loss for this batch
-        batch_size: Size of the batch
-    """
-    progress = (batch_idx + 1) / total_batches * 100
-    print(f"  Batch {batch_idx + 1}/{total_batches} ({progress:.0f}%) | "
-          f"Batch size: {batch_size} | Loss: {batch_loss:.6f}")

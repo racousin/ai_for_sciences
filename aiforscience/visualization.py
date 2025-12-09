@@ -42,17 +42,15 @@ def plot_gradient_descent_1d(f, theta_history, theta_range=(-5, 10), title="Grad
     axes[0].legend()
     axes[0].grid(True, alpha=0.3)
 
-    # Right plot: Loss over iterations
-    loss_history = [f(t) for t in theta_history]
-    axes[1].plot(range(len(loss_history)), loss_history, 'b-o', markersize=4)
+    # Right plot: Function value over iterations
+    f_history = [f(t) for t in theta_history]
+    axes[1].plot(range(len(f_history)), f_history, 'b-o', markersize=4)
     axes[1].set_xlabel('Iteration', fontsize=12)
     axes[1].set_ylabel('f(θ)', fontsize=12)
-    axes[1].set_title('Loss over iterations', fontsize=14)
+    axes[1].set_title('f(θ) over iterations', fontsize=14)
     axes[1].grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.show()
-
     return fig
 
 
@@ -78,8 +76,6 @@ def plot_loss_history(losses, title="Training Loss"):
     ax.legend()
 
     plt.tight_layout()
-    plt.show()
-
     return fig
 
 
@@ -114,8 +110,6 @@ def plot_predictions(X, y, y_pred, title="Model Predictions"):
     ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.show()
-
     return fig
 
 
@@ -164,6 +158,28 @@ def plot_gradient_step(theta_before, theta_after, gradient, learning_rate, f, th
     ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.show()
+    return fig
 
+
+def plot_nonlinear_data(X, y, y_pred=None, title="Data"):
+    """
+    Plot 2D non-linear data with optional predictions.
+
+    Args:
+        X: Input features (n_samples, 2)
+        y: True values
+        y_pred: Optional predicted values
+        title: Plot title
+    """
+    fig, ax = plt.subplots(figsize=(8, 6))
+
+    scatter = ax.scatter(X[:, 0], X[:, 1], c=y.flatten(), cmap='coolwarm', alpha=0.7, s=50)
+    plt.colorbar(scatter, ax=ax, label='y value')
+
+    ax.set_xlabel('X₁', fontsize=12)
+    ax.set_ylabel('X₂', fontsize=12)
+    ax.set_title(title, fontsize=14)
+    ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
     return fig
