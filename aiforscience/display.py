@@ -55,3 +55,70 @@ def print_device_comparison(cpu_time, gpu_time, speedup=None):
     print(f"  GPU: [{'█' * gpu_bar}{'░' * (cpu_bar - gpu_bar)}]")
 
     print(f"\n{'='*50}\n")
+
+
+def print_tokenization(text, tokenizer):
+    """
+    Print detailed tokenization information.
+
+    Args:
+        text: Input text string
+        tokenizer: Hugging Face tokenizer
+    """
+    tokens = tokenizer.tokenize(text)
+    token_ids = tokenizer.encode(text, add_special_tokens=False)
+
+    print(f"Text: '{text}'")
+    print(f"{'─'*50}")
+
+    # Show token-by-token breakdown
+    print("Tokens:")
+    for i, (tok, tok_id) in enumerate(zip(tokens, token_ids)):
+        # Clean up token representation
+        display_tok = tok.replace('Ġ', '▁')  # GPT-2 uses Ġ for space
+        print(f"  [{i:2d}] '{display_tok}' → ID: {tok_id}")
+
+    print(f"{'─'*50}")
+    print(f"Total tokens: {len(tokens)}")
+
+
+def print_model_summary(model, title="Model Summary"):
+    """
+    Print a summary of a PyTorch model's parameters.
+
+    Args:
+        model: PyTorch model (nn.Module)
+        title: Header title
+    """
+    print(f"\n{'='*50}")
+    print(f" {title}")
+    print(f"{'='*50}")
+
+    total_params = 0
+    trainable_params = 0
+
+    for name, param in model.named_parameters():
+        n_params = param.numel()
+        total_params += n_params
+        if param.requires_grad:
+            trainable_params += n_params
+
+    print(f"\n  Total parameters: {total_params:,}")
+    print(f"  Trainable parameters: {trainable_params:,}")
+
+    # Show breakdown by layer type
+    param_by_type = {}
+    for name, param in model.named_parameters():
+        # Extract layer type from name
+        parts = name.split('.')
+        layer_type = parts[0] if len(parts) > 0 else 'other'
+        if layer_type not in param_by_type:
+            param_by_type[layer_type] = 0
+        param_by_type[layer_type] += param.numel()
+
+    print(f"\n  Parameters by component:")
+    for layer_type, count in param_by_type.items():
+        pct = 100 * count / total_params
+        print(f"    {layer_type}: {count:,} ({pct:.1f}%)")
+
+    print(f"\n{'='*50}\n")

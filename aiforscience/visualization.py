@@ -183,3 +183,73 @@ def plot_nonlinear_data(X, y, y_pred=None, title="Data"):
 
     plt.tight_layout()
     return fig
+
+
+def plot_attention_weights(attention_weights, tokens, title="Attention Weights"):
+    """
+    Plot attention weights as a heatmap.
+
+    Args:
+        attention_weights: 2D numpy array of shape (seq_len, seq_len)
+        tokens: List of token strings
+        title: Plot title
+    """
+    fig, ax = plt.subplots(figsize=(8, 6))
+
+    im = ax.imshow(attention_weights, cmap='Blues', aspect='auto')
+    plt.colorbar(im, ax=ax, label='Attention Weight')
+
+    # Set ticks
+    ax.set_xticks(range(len(tokens)))
+    ax.set_yticks(range(len(tokens)))
+    ax.set_xticklabels(tokens, rotation=45, ha='right')
+    ax.set_yticklabels(tokens)
+
+    ax.set_xlabel('Key (attending to)', fontsize=12)
+    ax.set_ylabel('Query (from)', fontsize=12)
+    ax.set_title(title, fontsize=14)
+
+    plt.tight_layout()
+    return fig
+
+
+def plot_embeddings_2d(embeddings_2d, labels, categories=None, title="Embeddings"):
+    """
+    Plot 2D embeddings with labels and optional category colors.
+
+    Args:
+        embeddings_2d: 2D numpy array of shape (n_words, 2)
+        labels: List of word labels
+        categories: Optional list of category names for coloring
+        title: Plot title
+    """
+    fig, ax = plt.subplots(figsize=(10, 8))
+
+    if categories is not None:
+        unique_cats = list(set(categories))
+        colors = plt.cm.tab10(np.linspace(0, 1, len(unique_cats)))
+        cat_to_color = {cat: colors[i] for i, cat in enumerate(unique_cats)}
+
+        for cat in unique_cats:
+            mask = [c == cat for c in categories]
+            points = embeddings_2d[mask]
+            ax.scatter(points[:, 0], points[:, 1], c=[cat_to_color[cat]],
+                      label=cat, s=100, alpha=0.7)
+    else:
+        ax.scatter(embeddings_2d[:, 0], embeddings_2d[:, 1], s=100, alpha=0.7)
+
+    # Add labels
+    for i, label in enumerate(labels):
+        ax.annotate(label, (embeddings_2d[i, 0], embeddings_2d[i, 1]),
+                   xytext=(5, 5), textcoords='offset points', fontsize=9)
+
+    ax.set_xlabel('Component 1', fontsize=12)
+    ax.set_ylabel('Component 2', fontsize=12)
+    ax.set_title(title, fontsize=14)
+    ax.grid(True, alpha=0.3)
+
+    if categories is not None:
+        ax.legend(loc='best')
+
+    plt.tight_layout()
+    return fig
