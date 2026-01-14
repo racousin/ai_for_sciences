@@ -162,3 +162,34 @@ def find_most_similar(query_embedding, corpus_embeddings, corpus_labels, top_k=5
     results = [(similarities[i], corpus_labels[i]) for i in range(len(corpus_labels))]
     results.sort(reverse=True)
     return results[:top_k]
+
+
+def semantic_search(query, database, db_embeddings, model, top_k=3):
+    """
+    Find most similar items to a query using semantic search.
+
+    Args:
+        query: Query string
+        database: List of items in the database
+        db_embeddings: Pre-computed embeddings for database items
+        model: SentenceTransformer model for encoding query
+        top_k: Number of results to return
+
+    Returns:
+        List of tuples (similarity, item)
+    """
+    from sklearn.metrics.pairwise import cosine_similarity
+
+    query_emb = model.encode([query])
+    similarities = cosine_similarity(query_emb, db_embeddings)[0]
+    top_indices = similarities.argsort()[::-1][:top_k]
+
+    return [(similarities[idx], database[idx]) for idx in top_indices]
+
+
+def print_search_results(query, results):
+    """Print semantic search results in a formatted way."""
+    print(f"Query: '{query}'\n")
+    print("Most similar items:")
+    for rank, (sim, item) in enumerate(results, 1):
+        print(f"  {rank}. [{sim:.3f}] {item}")

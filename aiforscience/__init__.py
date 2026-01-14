@@ -36,6 +36,8 @@ from .embeddings import (
     compute_similarity_matrix,
     find_top_similar_pairs,
     find_most_similar,
+    semantic_search,
+    print_search_results,
 )
 
 __all__ = [
@@ -69,4 +71,6 @@ __all__ = [
     "compute_similarity_matrix",
     "find_top_similar_pairs",
     "find_most_similar",
+    "semantic_search",
+    "print_search_results",
 ]
