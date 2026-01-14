@@ -1,0 +1,637 @@
+author | content
+Maurits Arif Fathoni Lubis & Tang Zhe | Proposal Title: AI-Based Automated Vectorization of Historical Maps
+Background and Problem Statement
+Historical maps contain a large amount of valuable spatial information, such as settlement locations, transportation networks, land use boundaries, and administrative divisions. However, most of these maps are only available as scanned images or PDFs. To use the information in modern GIS workflows, the features must be manually digitized into vector formats (points, lines, and polygons), which is extremely time-consuming, labor-intensive, and prone to human error.
+Given the growing availability of historical map archives, there is a strong need for an automated or semi-automated approach that can extract geospatial features directly from map images while preserving the semantic meaning defined in the map legend.
+
+Objectives
+The main objective of this workshop project is to develop an AI-based workflow that can automatically extract vector data from historical maps. Specifically, the project aims to:
+Detect map objects represented as points, lines, and polygons from raster map images or PDFs.
+Classify these objects into meaningful categories based on the map legend (e.g., roads, rivers, buildings, boundaries).
+Convert the detected and classified objects into GIS-ready vector formats (shapefiles).
+
+Preliminary Methods
+The proposed approach will combine machine learning and deep learning techniques in several stages:
+Map Preprocessing
+Convert scanned maps’ image or PDFs into high-quality raster images.
+Georeferencing the maps’ image or PDFs so it has coordinates information
+
+Object Detection and Segmentation
+Use deep learning models (e.g., convolutional neural networks) to detect and segment map elements such as symbols, lines, and filled regions.
+Instance or semantic segmentation models can be applied to separate overlapping features and distinguish between different geometry types (points, lines, polygons).
+
+Legend-Based Classification
+Extract legend symbols and text from the map using computer vision and optical character recognition (OCR).
+Match detected map objects with legend symbols using feature similarity and supervised classification models.
+
+Vectorization and Export
+Convert segmented raster objects into vector geometries.
+Save the outputs as shapefiles with attribute information derived from legend classification.
+
+Expected Outcomes
+The expected outcome of this workshop is a prototype AI-based model or workflow that can:
+Automatically generate point, line, and polygon shapefiles from historical map images.
+Assign meaningful categories to extracted features based on the map legend.
+Significantly reduce the time and effort required for digitizing historical maps, while improving consistency and reproducibility.
+This project will demonstrate how AI can bridge the gap between historical cartographic archives and modern geospatial analysis, enabling more efficient reuse of historical spatial data in research and planning.
+###
+TrinidadBorrell | Topological Data Analysis and Graph Variational Autoencoders for Brain Connectivity Classification from EEG Signals
+Objective
+Electroencephalography (EEG) signals encode rich information about brain connectivity and dynamics, yet traditional feature extraction methods often fail to capture higher-order topological structures that emerge from neural interactions. This project aims to combine Topological Data Analysis (TDA) with Graph Variational Autoencoders (Graph-VAE) to develop a hybrid approach for classifying motor imagery brain states from EEG data. By representing functional brain connectivity as graphs and extracting persistent homology features that capture multi-scale topological properties, while simultaneously learning compressed latent representations through a Graph-VAE, we seek to create robust and interpretable neural state classifiers that leverage both the geometric structure of brain networks and the persistent topological features that distinguish different motor imagery tasks.
+Data Sources
+We will use the BCI Competition IV Dataset 2a, a well-established benchmark for motor imagery classification. This dataset contains EEG recordings from 9 subjects performing four-class motor imagery tasks: left hand, right hand, feet, and tongue movements. The EEG signals were recorded using 22 Ag/AgCl electrodes positioned according to the international 10-20 system. This dataset is ideal for our purposes because it provides sufficient sample size for training graph-based models, the 22-electrode montage enables meaningful functional connectivity graph construction covering motor cortex regions, the four-class paradigm offers a challenging multi-class classification scenario, and its status as a benchmark allows direct comparison with state-of-the-art methods.
+Preliminary Methodology
+The methodology consists of three stages: first, constructing functional connectivity graphs from EEG signals using correlation-based measures within sliding time windows, with electrodes as nodes and connectivity strengths as edge weights; second, applying persistent homology to these graphs using Rips or Vietoris-Rips filtrations to extract topological features summarized as persistence diagrams and Betti curves; third, we will train a Graph Variational Autoencoder on the connectivity graphs to learn compressed latent representations that encode the essential structural patterns of brain networks for each motor imagery class. The hybrid feature set, combining TDA-derived topological descriptors with Graph-VAE latent embeddings, will feed into a downstream classifier for motor imagery discrimination. 
+Expected Outcomes
+We expect to demonstrate that combining TDA-derived topological features with Graph-VAE latent representations yields superior classification performance compared to using either approach alone. The topological features should provide robustness to noise and individual variability in EEG recordings due to their invariance to continuous deformations, while the Graph-VAE component learns task-specific connectivity patterns in a compressed latent space. We anticipate achieving competitive accuracy with state-of-the-art methods on this benchmark dataset. The resulting framework should provide interpretable outputs revealing which topological properties of brain networks (persistent connected components, cycles) and which latent dimensions distinguish different motor imagery tasks, potentially offering insights into the functional organization of motor cortex during imagined movements.
+###
+Wenrui GAO | AI- Based Framework for Automated Cell-Type Annotation in Hepatic scRNA-seq
+
+Data.
+
+Objective
+To develop a computational framework to identify and characterize fibroblast heterogeneity
+within single-cell RNA sequencing (scRNA-seq) datasets. By leveraging machine learning, this
+
+project aims to automate the annotation of portal mesenchymal cells and uncover novel, high-
+fidelity biomarkers for specific cellular clusters associated with healthy and fibrotic mouse
+
+liver states.
+Data source
+This study utilizes a robust dataset of portal mesenchymal cells derived from 13 mouse models,
+capturing a spectrum of physiological states from healthy controls to induced fibrosis. To
+enhance the model's generalizability, these primary data will be integrated with relevant
+publicly available scRNA-seq datasets from the NCBI Gene Expression Omnibus (GEO).
+Preliminary methodology
+Develop a computational pipeline utilizing unsupervised and semi-supervised machine
+learning techniques. The initial model architecture will be constructed using the K-means
+clustering algorithm to partition scRNA-seq expression profiles based on centroid distances. A
+set of established, cell-type-specific canonical markers will be integrated into the model to
+guide the initial clustering and automated annotation of mesenchymal populations within the
+high-dimensional data. Following the identification of stable clusters, the model will perform
+differential expression analysis to derive novel, high-resolution gene markers specific to each
+distinct cellular sub-population, moving beyond traditional ambiguous identifiers.
+Expected outcomes
+Proof the concept of utilizing predictive machine learning to accurately partition and identify
+distinct cellular phenotypes within complex scRNA-seq datasets. The primary output will be a
+practical bioinformatic tool designed to resolve cellular identity in cases of ambiguous or
+overlapping expression profiles. This tool will facilitate the automated annotation of
+mesenchymal lineages and provide a validated catalog of novel, cluster-specific markers .
+These refined biomarkers will offer higher sensitivity and specificity than current standards,
+enabling a deeper understanding of cell-type-specific responses in both healthy and fibrotic
+liver conditions.
+###
+Samantha_Kwah | AI-Based Drug Repurposing for Plasmodium falciparum Using
+Multi-Modal Embeddings
+Objective
+The objective of this project is to develop an AI framework that predicts whether an
+existing drug can be repurposed as an effective treatment against Plasmodium
+falciparum, the parasite responsible for severe malaria. Although drug repurposing is
+faster and more cost-effective than de novo discovery, experimentally screening all
+candidate compounds against parasite targets, life stages, and resistance backgrounds
+is infeasible. This project aims to learn joint drug–parasite–host embeddings that
+capture relationships between drug chemistry, parasite biology, and relevant human
+host pathways, and to use a deep learning model to estimate repurposing success for
+unseen drug candidates.
+Data Sources
+Publicly available drug chemistry and bioactivity data will be obtained from ChEMBL
+and DrugBank, while parasite-specific gene annotations, functional information, and
+life-stage expression profiles will be sourced from PlasmoDB, with optional resistance
+data from MalariaGEN. Parasite transcriptomic data will be collected from GEO and
+ArrayExpress, and human host pathways relevant to host–parasite interactions will be
+obtained from KEGG, Reactome, and Pathway Commons. Protein interaction
+information may be incorporated from STRING, supplemented by orthology-based
+transfer when parasite interaction data are limited.
+Methodology
+Drugs will be represented as molecular graphs and encoded using graph neural
+networks (GNNs) to learn structure-aware embeddings. P. falciparum biology will be
+modeled using gene and pathway graphs, while parasite gene expression profiles will
+be embedded using CNN- or transformer-based encoders. These representations will
+be fused into a unified embedding space and passed to a neural prediction model that
+
+outputs a repurposing likelihood score. To address limited labeled data, parasite-
+specific data augmentation strategies will be applied, including graph augmentation of
+
+parasite networks, and embedding-level mixup for underrepresented drug–parasite
+pairs and possibly transfer learning methods
+Expected Outcomes
+The project is expected to produce a trained model that ranks existing drugs by
+predicted antimalarial repurposing potential, a shortlist of promising candidate
+compounds supported by biological evidence, and an interpretable embedding space
+revealing relationships between drugs and parasite mechanisms.
+
+###
+Shang Ma | Machine Learning Frameworks for AI-Driven Discovery in Interfacial Science
+
+1. Objective
+The objective of this project is to develop a machine learning framework that links atomic-scale
+interactions at solid–liquid interfaces to emergent interfacial behavior at larger scales.
+Rather than focusing on a specific chemical system, this project aims to:
+• Understand how local atomic environments and surface structures influence macroscopic
+interfacial properties
+
+• Build predictive models that translate atomistic simulation data into coarse-grained or system-
+level insights
+
+• Explore the role of machine learning in bridging microscopic mechanisms and macroscopic
+behavior
+2. Data Sources
+The project will use open and reproducible datasets, including:
+• Atomistic simulation data: surface and interface configurations, interaction energies, and atomic
+forces generated from density functional theory (DFT) or molecular dynamics simulations
+• Open materials and interface databases, such as the Materials Project (for crystal and surface
+structures) and publicly available adsorption or interface datasets hosted on GitHub
+3. Preliminary Methodology
+The preliminary methodology consists of three main components:
+1. Atomic-to-mesoscale representation
+o Encode atomic configurations using descriptor-based or graph-based representations
+o Aggregate local atomic information to capture mesoscale interfacial features
+2. Machine learning modeling
+o Train supervised learning models to predict interfacial properties from atomistic inputs
+3. Cross-scale analysis
+o Relate atomic-level predictions to trends in macroscopic interfacial behavior
+o Identify atomic descriptors most strongly correlated with system-level properties
+
+4. Expected Outcomes
+By the end of this project, the expected outcomes include:
+• A machine learning model that captures relationships between atomic-scale interactions and
+macroscopic interfacial trends
+• Insights into which atomic-scale features most strongly influence system-level behavior
+###
+Evangelia_Petropoulou |
+Project Proposal - AI for Sciences Winter School: Benchmarking hybrid RL
+and RNNs in sequential decision making
+
+Objective: A central challenge in cognitive neuroscience and AI is understanding how agents
+navigate complex, multi-stage environments. Decision-making is often governed by two
+competing systems: a Model-Free (MF) system that reinforces successful actions and a
+Model-Based (MB) system that utilizes a map of the environment to plan. Our objective will
+be to develop a robust computational pipeline to dissociate these two influences using a
+classic "two-step task" framework. By bridging behavioral modeling with neural encoding
+techniques, we seek to create a tool that can predict both choice behavior and the
+underlying computational signatures (e.g., reward prediction errors) associated with these
+distinct learning systems.
+Data Sources: We will use the publicly available behavioral logs from Miranda et al. (2020)
+(PLOS Computational Biology), including extensive trial-by-trial choice and reward data from
+non-human primates performing a two-stage task. We will leverage existing open-source
+implementations of the Daw/Miranda Hybrid RL models and use the Neuromatch Academy
+codebase for RL and GLMs to ensure a standardized and reproducible analysis.
+Preliminary Methodology: We will implement a hybrid reinforcement learning agent that
+integrates MF and MB learning to fit behavioral parameters. Using Maximum Likelihood
+Estimation (MLE), we will extract subject-specific latent parameters, such as the learning
+rate (α), RPE and model-based weighting factors (ω). We will then implement a Recurrent
+Neural Network to act as a data-driven predictor of choice behavior. We will compare the
+RNN's hidden states to our RL model’s variables to see if the network naturally "learns" the
+environment's structure. Finally, to ensure our pipeline is ready for future neurophysiological
+applications, we will generate synthetic spike trains based on the model’s RPE signals using
+a Poisson process. We will finally use a GLM to test if we can recover these latent signals
+from the noisy simulated activity. This "sim-to-real" step validates that our tool is ready for
+real action potential data.
+Expected Outcomes: At the end of the project, we expect to obtain a Python repository that
+processes raw choice logs and outputs both traditional RL parameters and deep-learning
+choice predictions. Simultaneously, we seek to have a report on whether rigid mathematical
+models or flexible RNNs better capture the nuances of biological decision-making. Finally,
+this framework should be ready to receive real dopamine recording data, providing a
+streamlined path for future research.
+###
+Hari Haran Sudhakar | Evaluating machine-learning methods in predicting chemical properties
+Introduction
+Computational chemistry enables us to understand the different levels of
+complexities in exploring chemical compound space. Researchers study the physical,
+chemical, thermodynamic, energetic, geometric, and electronic properties of systems
+ranging from very small organic molecules to proteins and crystals using various
+computational chemistry approaches. Every property of a system does not necessarily
+make sense in all the length and time scales. Depending on its significance, various
+techniques starting from quantum mechanical (QM) calculations, spanning across
+various lengths and time scales, up to continuum simulations. QM methods are the
+first principle calculations, which can provide us with very accurate and reliable
+properties, but on the other hand, they are computationally expensive. With the
+emerging data-driven techniques, machine-learning methods could offer an
+alternative methodology to predict these QM properties from an already
+available/built dataset which will enable us to explore the chemical space in an
+efficient way.
+Dataset
+The QM9 dataset [1] contains 134k small organic molecules made up of atoms
+such as carbon, hydrogen, oxygen, nitrogen and fluorine. This dataset consists of scalar
+properties calculated at the density functional theory (DFT) level. It contains energy
+gaps, rotational constants, and internal energies, enthalpy, heat capacity, and their
+SMILES and InChl strings, along with their co-ordinates and partial charges.
+Objectives
+ To look for correlations between different thermodynamic properties
+available in the dataset.
+ To build a machine learning model from the dataset to predict the
+thermodynamic and electronic properties of molecules from their atomic
+structures.
+ To build a machine learning model to predict a property of a molecule as a
+function of one or more other properties.
+ To employ different ML methods and evaluate them to find the best suited
+method for predicting a particular class of properties.
+References
+[1] Ramakrishnan, R., Dral, P., Rupp, M. et al. Quantum chemistry structures and
+properties of 134 kilo molecules. Sci Data 1, 140022 (2014).
+https://doi.org/10.1038/sdata.2014.22
+###
+Ho Xin Jie Kenneth |
+CNN-Based Super-Resolution of Satellite Imagery
+Objective: Super-resolution (SR) is the task of reconstructing a higher-resolution image from
+a lower-resolution one. Sentinel-2 satellite imagery provides frequent and broad observation
+but is limited by its relatively low spatial resolution. This restricts the usefulness of the
+images for applications requiring higher detail resolution. The project aims to develop a
+
+convolutional neural network (CNN)-based super-resolution model that enhances low-
+resolution Sentinel-2 imagery through the reconstruction of the high-resolution images.
+
+Data Source: The project will use the SEN2NAIPv2 dataset
+(https://huggingface.co/datasets/isp-uv-es/SEN2NAIP) on Hugging Face. In this dataset,
+there are a few different types of low-resolution (LR) and high-resolution (HR) pairs. The
+biggest data set is the Synthetic LR-HR pairs, generated by downscaling HR imagery. The
+smaller data set is formed by real LR images from SENTINEL-2 imagery, cross referenced to
+high resolution imagery from NAIP, which are captured within a 1-day window.
+Preliminary Methodology: The proposed approach begins with pairing low and high
+resolution image patches, and resizing into a consistent spatial resolution. A convolutional
+neural network will be trained to learn a mapping from LR images into HR images. The
+reconstruction will be optimised using Mean Square Error analysis. The performance of the
+model will finally be validated visually.
+Expected Outcomes: In this project, we expect to create a trained CNN model that can
+upscale the spatial resolution of LR images using HR references. At the end, we should be
+able to provide visual confirmation of the improvements CNN has over traditional
+upsampling techniques. This project should provide Insights into the strengths and
+limitations of CNN-based networks.
+###
+Manya_Aggarwal | Voxel-Based Generative Modeling for De Novo Drug Design Using 3D Molecular
+
+Representations
+
+Objective
+The objective of this research is to develop and evaluate a 3D generative framework for de novo
+drug design based on voxelized molecular representations. The recent VoxMol approach proposes
+representing molecules as continuous atomic densities on 3D voxel grids and generating new
+molecules using score-based diffusion models. This project aims to extend and apply voxel-based
+generative modeling toward practical drug discovery, with a focus on generating chemically valid,
+diverse, and drug-like molecules, and exploring the potential for property-guided molecular
+generation.
+Data Sources
+The project will rely exclusively on open-access molecular datasets, including:
+GEOM-Drugs Dataset
+Source: Axelrod & Gomez-Bombarelli (open repository)
+Contains ~300k drug-like molecules with optimized 3D conformations
+Primary dataset used in the VoxMol paper
+Preliminary Methodology
+Molecular Representation
+Molecules will be encoded as 3D voxel grids using atomic density functions.
+Each atom contributes a Gaussian density to the grid, following the VoxMol approach.
+Separate channels will represent different atom types (C, N, O, H, etc.).
+Generative Model
+A score-based diffusion model will be trained to learn the gradient of the data distribution in voxel
+space.
+A 3D U-Net architecture will be used to denoise noisy molecular density grids.
+Molecule generation will be performed via Langevin dynamics–based sampling.
+Molecule Reconstruction
+Generated density grids will be converted back to atomic structures using peak detection.
+Post-processing steps will ensure chemical consistency (bond lengths, valency
+constraints).
+Expected Outcomes
+1. A working implementation of a voxel-based molecular generative model capable of
+producing novel 3D molecular structures.
+2. Demonstration that voxel-based representations can effectively generate large, drug-like
+molecules.
+###
+Hui_Xie | 
+Project Proposal: Cell Segmentation in Quantitative Phase Imaging Data
+Quantitative phase imaging (QPI) is a powerful label-free microscopy technique that
+provides quantitative measurements of cellular optical path length, enabling the study
+of cell morphology, dry mass, and dynamic biological processes without the need for
+fluorescent markers. These advantages make QPI particularly attractive for long-term
+live-cell imaging and high-throughput analysis. However, accurate cell segmentation in
+QPI data remains a significant challenge due to large variability in cell shape and size,
+and weak contrast at cell boundaries. As a result, conventional segmentation approaches
+based on thresholding, edge detection, or simple morphological operations often fail,
+especially in densely packed cell cultures or low-contrast conditions. The objective of
+this project is to develop a robust and automated cell segmentation framework for QPI
+images using deep learning techniques, with the aim of accurately delineating
+individual cell boundaries across diverse cell types and imaging conditions.
+To ensure reproducibility and generalizability, the project will make use of
+experimental QPI datasets acquired under realistic imaging conditions, including
+variations in cell density and morphology. In addition, publicly available microscopy
+segmentation datasets associated with Cellpose will be leveraged as reference data and
+ground truth for model evaluation and adaptation.
+The initial approach will involve applying a deep learning–based segmentation model
+to QPI images to establish a baseline level of performance and to identify challenges
+that are specific to phase-based imaging, such as weak boundary contrast and
+background inhomogeneity. The model will then be adapted using QPI data through
+task-specific training or fine-tuning, with particular attention paid to preprocessing
+steps tailored to phase images, including background flattening, phase normalization,
+and noise suppression.
+The expected outcome of this project is a validated and adaptable segmentation pipeline
+tailored specifically to quantitative phase imaging data. The project aims to demonstrate
+that deep learning–based methods, when appropriately adapted to phase imaging
+characteristics, can overcome the limitations of traditional segmentation techniques in
+label-free microscopy. The resulting segmentation masks will enable reliable
+downstream QPI analyses, including quantitative measurements of cell morphology,
+dry mass distribution, and population-level statistical studies.
+###
+Ranjith Shivajirao | Symmetry Enforced Convolutional Neural Networks towards robust inverse-inference models.
+Motivation:
+One of the first things taught in condensed matter physics is symmetry. Especially in crystalline systems, symmetry
+places strict constraints on optical and electronic properties which becomes predictable as one understands the
+symmetries of the system even before knowing what the system is even made of. I wonder if the same principle is
+applicable to AI models. Does “teaching” symmetry to AI models make them more reliable predictors or influence
+patterns in their predictive accuracy?
+Objective:
+To learn about the impact of symmetry, we compare unrestricted and symmetry-enforced AI models for object
+identification to answer the following questions:
+1. Are symmetry-enforced AI models more resilient against orientation distortions?
+2. Are models more robust against uncertainties in measurement when they are aware of the symmetries of the
+system?
+3. When it comes to backward inference of experimental parameters, does symmetry enforcement in neural
+networks offer any advantage in predictive accuracy?
+The project is designed as three phases ending at a scalable practical model that has applications across scientific fields
+in instrument automation solving inverse inference problems. Along the way, learning the basics of building AI models
+with advanced Python packages available today and quantitative metric-based evaluation and interpretation of
+possible performance advantages in employing symmetry enforced equivariant neural networks (e2cnn or escnn) over
+conventional convolutional neural networks (CNN).
+Data sources:
+NuCLS dataset – An open-source data collection of over 220k labeled cell nuclei from cancer cell imaging via Optical
+microscopy.
+Preliminary methodology:
+To compare the performance of models, two AI models, a small residual CNN (like a Mini-ResNet) would be built –
+Model M0 and another model built over M0 but symmetry such as rotation and reflection enforced through e2cnn –
+Model M1 are trained on the same dataset (unique, labeled cell images without data augmentation). At phase-I the
+models would be tested against data from the same collection but not used in training (typical test-train split). At
+phase-II the models would be tested against data previously unused but with added noise such as random rotations or
+reflections consistent with the enforced D4 symmetry, Gaussian blur, random pixel noise, image skewing or doubling.
+The goal at both these stages is to get the model appropriately classify a given cell image into one of the labels. Metrics
+such as accuracy, F-1 score, confusion matrix and per-class recall are used to establish a performance baseline, while
+prediction consistency and accuracy as a function of symmetric distortion of data and Negative log Likelihood(NLL) or
+expected calibration error(ECE) measures on noisy data can help us determine if symmetry enforcement allows models
+be more resilient when test data begins to deviate slightly from the training data in predictable ways and at what point
+they breakdown. At phase-III, models are trained for inverse-inference on a parametrically modified data over raw data
+and the parameters used for modification; a Gaussian blur modification with the standard deviation (ν) used for
+blurring as the parameter. The Goal at this stage is for the models to predict ν. Metrics like bias, RMS error, variance
+in prediction and invariance under symmetric operations can be used to quantify the inverse-inference efficiency.
+Expected outcomes:
+Given similar training conditions, equivariant models could extract more generalized information based on the
+symmetries in the data. While we don’t expect it to make drastic improvements at baseline performance which are
+more influenced by the training volume, we expect significant improvements in failure metrics such as NLL, ECE as we
+expect the symmetry enforced model to make fewer high confidence mistakes and reduced prediction variance in
+inverse-inference. If no difference is observed, it could indicate that for this dataset, symmetry constraints do not
+materially affect robustness or inverse inference.
+Significance:
+Many scientific data are symmetry invariant. Which symmetries they are invariant under is determined by the system
+under investigation and techniques used for studying them. Creating AI models that are capable of understanding and
+utilizing the symmetries of the system and therefore the data could significantly reduce false positive outcomes which
+a human scientist could have immediately recognized as unphysical as it is against system symmetry and cast out
+focusing more towards actual data rather than unphysical noise, especially when the available data quantity is limited.
+The final inverse-inference model has practical applications over a wide range of scientific fields especially microscopy
+(namely optical, fluorescence, Atomic Force(AFM) and Scanning Tunnelling (STM) microscopy) where complete
+automation with AI demands that the model could interpret(inverse-infer) instrumental parameters from the image
+such as focus height from real time optical image and tune them to near perfection.
+
+Reference:
+1. Azulay, Aharon and Yair Weiss. “Why do deep convolutional networks generalize so poorly to small image
+transformations?” J. Mach. Learn. Res. 20 (2018): 184:1-184:25.
+2. Alessandra Micheletti, A new paradigm for artificial intelligence based on group equivariant non-expansive
+operators. Eur. Math. Soc. Mag. 128 (2023), pp. 4–12
+3. Bekkers, Erik J. et al. “Roto-Translation Covariant Convolutional Networks for Medical Image Analysis.”
+International Conference on Medical Image Computing and Computer-Assisted Intervention (2018).
+Collaboration possibility:
+Given the modular project structure, workload can be naturally distributed across multiple collaborators. If you are
+interested in symmetry-aware models, microscopy/imaging data, inverse-inference problems or just the project in
+general and would like to contribute, please feel free to reach out to me either via email or Mattermost platform.
+###
+Abdurrahman Adam |
+Machine-learning guided cellulase enzyme
+production optimization
+
+Objective
+To develop a predictive model for cellulase enzyme production yield optimization in 5-L
+reactor scale
+Data source
+Hybrid dataset of 5-L microbial reactor fermentation conditions and output :
+
+https://www.kaggle.com/datasets/adityanarayankonwar/fermentation-
+optimization?resource=download
+
+Preliminary methodology
+• Define regression model
+• Data pre-processing: Noise reduction, missing data elimination, statistical descriptive
+analysis, normalization
+• Model training using split datasets
+• Statistical fitness and performance evaluation
+• Model tuning
+• Predictive modelling
+
+Expected outcomes
+• Reaction conditions to achieve the highest percent yield (%)
+###
+Ali Moshiri1  Alice Sinatra |
+AI-assisted magnetometry using quantum correlations
+In a recent paper [1], it has been demonstrated experimentally that deep learning models could take
+advantage of quantum correlations in an ensemble of atoms used as sensors to infer time-varying
+fields from an optical measurement. More precisely, the high precision of atomic sensors can be
+further enhanced by quantum correlations between atoms prepared in an entangled state [2, 3], and
+an artificial intelligence exploits this advantage while ignoring the origin of the quantum correlations
+and the detailed and complicated microscopic physics of the system. In a separate direction, we have
+quantified the benefit of using spin f atoms (f > 1/2) to achieve spin-squeezing [4]. Our idea would
+be to use deep learning models, particularly transformers, in order to infer a time-dependent field
+with high accuracy, using an ensemble of large spin atoms (f > 1/2) where qunatum correlations
+have been created as in [4].
+
+I. OBJECTIVE
+
+Train an AI to infer a stochastic magnetic field while benefitting from quantum atomic correlations (spin squeezing).
+
+II. DATA SOURCES
+
+The data will be simulated by deriving the stochastic differential equations of the atom-light system from first principles. In a
+physics experiment, the optical records gives access to information on the atomic collective spin, which in turn is proportional
+to the magnetic field. So, the training data for our AI would consist of a time series where for each time step, the input would be
+the light signal xph, and the output would be the magnetic field B(t).
+
+III. PRELIMINARY METHODOLOGY
+
+Program a generative AI, using a transformer (suited for such a time sequence), which will train on the data generated. This
+is expected to give better performaces with respect to the Recurrent Neural Networks used in [1, 5]. By comparing results with
+correlated and non-correlated atoms, we will quantify the benefits of quantum correlations in this scheme.
+
+IV. EXPECTED OUTCOMES
+
+Proof of concept of using a generative AI to measure a time-dependent magnetic field beyond the standard quantum limit : a
+trained generative model would be able to decode the optical measurement records and infer the magnetic field signal with high
+accuracy, benefitting from spin squeezing.
+
+[1] Junlei Duan, Zhiwei Hu, Xingda Lu, Liantuan Xiao, Suotang Jia, Klaus Molmer and Yanhong Xiao, "Concurrent spin squeezing and field
+tracking with machine learning", Nature Physics (2025)
+∗ ali.moshiri@lkb.ens.fr
+†
+alice.sinatra@lkb.ens.fr
+
+2
+[2] D. J. Wineland, J. J. Bollinger, W. M. Itano, F. L. Moore andD. J. Heinzen, "Spin squeezing and reduced quantum noise in spectroscopy",
+Phys. Rev. A (1992)
+[3] Luca Pezzè, Augusto Smerzi, Markus K. Oberthaler, Roman Schmied and Philipp Treutlein, "Quantum metrology with nonclassical states
+of atomic ensembles", Rev. Mod. Phys. (2018)
+[4] A. Moshiri, A. Sinatra, "Deterministic nuclear spin squeezing and squeezing by continuous measurement using vector and tensor light
+shifts", SciPost Physics (to be published).
+[5] M. Khanahmadi and K. Mølmer, "Time-dependent atomic magnetometry with a recurrent neural network", PhysRevA.103.032406 (2021)
+###
+Karthick_Raja_Arulprakasam | 
+AI-assisted endoplasmic reticulum stress profiling in infection
+
+Objective
+Quantify and compare endoplasmic reticulum (ER) stress / unfolded protein response
+(UPR) activation across human infectious disease transcriptomes (viral infection), and
+test whether ER-stress signatures can predict clinically relevant phenotypes (e.g.,
+infection status or severity) from bulk RNA-seq.
+Data sources (processed count matrices + metadata)
+NCBI GEO: GSE152075 for viral infection. Includes a downloadable raw-counts matrix as
+a GEO supplementary file.
+
+ImmuneSpace / ImmPort:Curated human perturbation studies with standardized gene-
+expression matrices retrievable via ImmuneSpaceR (use influenza-related cohorts as
+
+external viral validation).
+Preliminary methodology
+•Ingest count/expression matrices obtained from GEO/ recount3; harmonize gene IDs;
+filter low-expression genes; apply within-study normalization and covariate adjustment
+(age/sex where available). Compute ER-stress/UPR activity scores using curated gene
+sets and pathway scoring (e.g., ssGSEA/GSVA-style scoring).
+•Train simple, interpretable models to predict phenotype from transcriptome: logistic
+regression / gradient boosting using (a) UPR scores, and (b) selected UPR genes; use
+cross-validation by study.
+•Model interpretation: SHAP/feature importance to identify key ER-stress genes driving
+predictions.
+•Optional representation learning: use a gene-expression foundation model (or
+autoencoder) to learn embeddings, then test whether ER-stress signal improves
+downstream prediction and clustering.
+Expected outcomes
+•A robust ER-stress/UPR activation map across severity strata (e.g., sepsis vs septic
+shock).
+•A compact ER-stress biomarker panel (ranked genes + pathway scores) that generalizes
+across at least two independent cohorts.
+•A lightweight, reproducible pipeline (notebook + docs) that downloads public matrices,
+scores UPR, trains models, and outputs interpretable reports.
+###
+Li Teng_Tan | 
+Objective :
+To systematically characterize the proteome of the sample reaction and identify
+proteins potentially linked to signalling pathways or phenotypes using MS/MS spectrum
+analysis.
+
+Data sources:
+The data source is from Kaggle, provided as an MS/MS Spectrum Analysis CSV file.
+(https://www.kaggle.com/datasets/willianoliveiragibin/msms-spectrum-analysis/data ).
+
+Preliminary methodology :
+1. Perform quality control (QC).
+2. Normalize the LC–MS/MS intensity values.
+3. Conduct peptide-to-protein roll-up to obtain robust quantitative protein
+abundance estimates.
+4. Apply statistical differential expression analysis on the protein list (defined by
+accession, gene name, and description).
+
+5. Perform protein identification analysis using existing databases (UniProt/Swiss-
+Prot) to identify protein candidates present in the sample.
+
+Expected outcomes
+The analysis is anticipated to produce a comprehensive proteomic profile of the sample
+reaction, incorporating normalized and quality-controlled quantitative estimates of
+protein abundance. Differential expression analysis will pinpoint proteins with
+significant variation across experimental conditions or treatments, clarifying their
+associations with specific signalling pathways and phenotypic outcomes. Ultimately,
+integration with UniProt and Swiss-Prot databases will yield a clearly defined list of
+candidate proteins with annotated functions, prioritized for subsequent experimental
+validation and pathway analysis.
+###
+Wei Song_Seetoh | Blood-Based Machine Learning Models for Stroke Risk Prediction
+Objective
+Stroke is a major contributor to global morbidity and mortality, yet many individuals remain
+undiagnosed or untreated until a cerebrovascular event occurs. Early identification of high-risk
+individuals is critical for stroke prevention, but current screening approaches often rely on
+imaging or specialist assessment, which may not be readily accessible. Routine blood tests, on
+the other hand, offer a potential low-cost alternative for risk stratification and early
+identification of potential stroke patients for further routine tests to prevent later onset of stroke.
+The objective of this study is to develop and evaluate machine learning models to predict stroke
+
+risk in patients using routinely collected blood laboratory data and to identify crucial blood-
+based biomarkers associated with stroke and assess their predictive utility when combined with
+
+basic demographic variables.
+Data Source (https://wwwn.cdc.gov/nchs/nhanes/default.aspx)
+Publicly available NHANES questionnaire data spanning over multiple survey cycles (e.g.,
+1999–2022) will be used, in particular the following component datasets:
+• Medical Conditions Questionnaire (MCQ): Self-reported history of stroke and
+transient ischemic attack, serving as the primary outcome variable.
+• Laboratory Data: Blood-based biomarkers including complete blood count, glucose,
+lipid profiles, and inflammatory markers.
+• Demographic Data (DEMO): Age, sex, race/ethnicity, and other core participant
+characteristics.
+
+Preliminary Methodology
+1. Data Integration and Preprocessing:
+• All component datasets will be merged using the unique participant identifier (SEQN)
+• Data from the different survey cycles will be concatenated together with a separate
+identifier indicating the survey cycle where data was obtained
+• Data will be preprocessed through term harmonization and removal of invalid responses
+2. Feature Selection and Engineering: Explore various blood-based biomarkers to select for
+crucial features that may improve model prediction. Remove redundant features
+3. Model Development: Train and compare multiple supervised learning models (e.g. logistic
+regression, random forest, XGBoost)
+
+4. Model Evaluation: Evaluate model prediction outcomes through metrics such as AUC-
+ROC, sensitivity, specificity, and accuracy. Conduct cross-validation and ablation testing
+
+to ensure robustness
+
+Expected Outcomes
+1) Identification of key blood biomarkers associated with stroke history
+2) Quantitative evaluation of the predictive performance of blood-based machine learning
+models
+###
+Geoffvinc Ng |
+Pre-Optimization Quality Assurance for Dose Prediction Model using
+Test-Time Augmentation
+Problem Statement
+Dose prediction model enables automation of dose constraint selection and automation of
+treatment planning, leading to shorter planning time. However, the reliability of the
+predicted dose distribution is unchecked and is only usually discovered after the
+computationally expensive optimization process has completed, resulting in wasted
+resources and planning delay. Therefore, pre-optimization quality assurance of the
+predicted dose distribution before plan generation begins is crucial. In this project, we aim
+to build an automated Test Time Augmentation test as a preliminary test to investigate the
+stability of the dose prediction model, ensuring robust, safe, and resource-efficient
+prediction guide for the treatment plan.
+Dataset
+We will use OpenKBP (https://github.com/ababier/open-kbp) datasets containing 340
+patients (200 training, 40 validation, 100 test) with dose distribution, CT image, structure
+mask, and feasible dose mask. The official pre-trained U-Net architecture will also be used.
+Preliminary Methodology
+The patient CT image and structure sets are resampled to openKBP-specified resolution,
+which is 128x128x128 pixels. Other pre-processing will be conducted if necessary.
+We generate 20 rotation, translation, and combined scenarios to each patient’s CT image.
+Then we will predict the dose distribution using the pre-trained U-Net baseline model to
+each transformed image and also to the nominal image. Then we will inverse transform the
+image and dose distribution to the initial image position.
+To investigate the precision of the stability of the prediction, we calculate the voxel-wise
+dose standard deviation and the mean absolute error to the original image’s predicted
+dose distribution. On inspecting the accuracy of the prediction, we calculate the mean
+absolute error and the root mean square error of dose from the translated image to the
+ground truth dose. Additional metrics such as Dose-Volume Histogram (DVH) band,
+Gamma Passing Rate (GPR 2%/2mm) and isodose Dice Similarity Coefficient will also be
+evaluated.
+Expected Outcome
+To develop and validate an automated pre-optimization quality assurance framework for
+deep-learning based dose prediction model. We expect to quantify the prediction stability
+through various evaluation metrics such as standard deviation, mean absolute error, RMSE,
+GPR, and DSC. Using this result, we aim to establish a constraint to flag out insatiable dose
+prediction before they are being used to optimize treatment plans.
+###
+Alexandre_Millischer |
+Objective
+This project aims to develop a Transformer-based digital-twin model for short-term forecasting of nuclear power plant behavior during transient regimes. Using time-series data from a limited set of approximately 60 physical sensors, the primary objective is to accurately forecast the future evolution of all sensors over a 60-second horizon. Forecasting performance on transients is treated as the core milestone of the project. Only once this capability is validated will the work extend to robustness against missing or faulty sensors and to identifying sensors with limited predictive value.
+Data sources
+The study will use the NPPAD (Nuclear Power Plant Accident Data) dataset, which provides multivariate time-series from simulated pressurized water reactor transients and accident scenarios generated with PCTRAN. The dataset is available via an associated GitHub repository.
+Preliminary methodology
+The initial phase focuses exclusively on forecasting and is based on an efficient temporal Transformer architecture adapted to multivariate time series. The model is trained to predict future sensor trajectories directly from past observations, with evaluation performed on entire unseen transients to ensure genuine generalization. A limited number of base transients is enriched by systematically varying physical and initial-condition parameters, while keeping all variants of a given transient grouped during training and testing. If forecasting performance is satisfactory, the model will then be extended to handle missing or corrupted sensors through sensor masking during training. In a final stage, sensor importance will be assessed through controlled ablation and sparsity-driven selection mechanisms.
+Expected outcomes
+The expected outcome is a Transformer-based forecaster that reliably predicts the short-term evolution of nuclear plant transients and generalizes to unseen parameter variations. Conditional on achieving strong forecasting results, the project should then demonstrate robustness to sensor loss and provide quantitative insight into which sensors are most critical for prediction, enabling principled reduction of instrumentation without significant loss of performance.

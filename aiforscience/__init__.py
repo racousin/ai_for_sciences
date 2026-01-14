@@ -11,6 +11,10 @@ from .visualization import (
     visualize_tokens,
     compare_tokenizers,
     tokenizer_stats,
+    plot_similarity_matrix,
+    plot_embeddings_umap,
+    plot_embeddings_tsne,
+    print_tokenization_example,
 )
 
 from .display import (
@@ -25,6 +29,15 @@ from .data import (
     generate_nonlinear_data,
 )
 
+from .embeddings import (
+    load_student_projects,
+    get_text_embeddings,
+    get_transformer_embeddings,
+    compute_similarity_matrix,
+    find_top_similar_pairs,
+    find_most_similar,
+)
+
 __all__ = [
     # Visualization
     "plot_gradient_descent_1d",
@@ -37,6 +50,10 @@ __all__ = [
     "visualize_tokens",
     "compare_tokenizers",
     "tokenizer_stats",
+    "plot_similarity_matrix",
+    "plot_embeddings_umap",
+    "plot_embeddings_tsne",
+    "print_tokenization_example",
     # Display
     "print_model_params",
     "print_device_comparison",
@@ -45,4 +62,11 @@ __all__ = [
     # Data
     "generate_linear_data",
     "generate_nonlinear_data",
+    # Embeddings
+    "load_student_projects",
+    "get_text_embeddings",
+    "get_transformer_embeddings",
+    "compute_similarity_matrix",
+    "find_top_similar_pairs",
+    "find_most_similar",
 ]

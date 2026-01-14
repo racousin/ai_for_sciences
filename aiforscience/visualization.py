@@ -474,3 +474,167 @@ def tokenizer_stats(tokenizers, texts=None):
 
     plt.tight_layout()
     return fig
+
+
+def plot_similarity_matrix(similarity_matrix, labels, title="Similarity Matrix", cmap='Blues', figsize=(10, 8)):
+    """
+    Plot a similarity matrix as a heatmap.
+
+    Args:
+        similarity_matrix: 2D numpy array of similarities
+        labels: List of labels for rows/columns
+        title: Plot title
+        cmap: Colormap
+        figsize: Figure size
+
+    Returns:
+        fig: matplotlib figure
+    """
+    fig, ax = plt.subplots(figsize=figsize)
+
+    im = ax.imshow(similarity_matrix, cmap=cmap, vmin=0, vmax=1)
+    plt.colorbar(im, label='Cosine Similarity')
+
+    ax.set_xticks(range(len(labels)))
+    ax.set_yticks(range(len(labels)))
+    ax.set_xticklabels(labels, rotation=45, ha='right', fontsize=9)
+    ax.set_yticklabels(labels, fontsize=9)
+    ax.set_title(title, fontsize=12, fontweight='bold')
+
+    plt.tight_layout()
+    return fig
+
+
+def plot_embeddings_umap(embeddings, labels=None, categories=None, title="UMAP Projection",
+                         figsize=(10, 8), point_size=60, alpha=0.7, annotate=False):
+    """
+    Plot embeddings using UMAP dimensionality reduction.
+
+    Args:
+        embeddings: numpy array of shape (n_samples, embedding_dim)
+        labels: Optional list of text labels for annotation
+        categories: Optional list of category names for coloring
+        title: Plot title
+        figsize: Figure size
+        point_size: Size of scatter points
+        alpha: Transparency
+        annotate: Whether to add text annotations
+
+    Returns:
+        fig: matplotlib figure
+    """
+    from umap import UMAP
+
+    # Reduce to 2D
+    reducer = UMAP(n_components=2, random_state=42, n_neighbors=min(15, len(embeddings)-1))
+    embeddings_2d = reducer.fit_transform(embeddings)
+
+    fig, ax = plt.subplots(figsize=figsize)
+
+    if categories is not None:
+        unique_cats = list(set(categories))
+        colors = plt.cm.tab10(np.linspace(0, 1, min(len(unique_cats), 10)))
+        cat_to_color = {cat: colors[i % len(colors)] for i, cat in enumerate(unique_cats)}
+
+        for cat in unique_cats:
+            mask = [c == cat for c in categories]
+            points = embeddings_2d[np.array(mask)]
+            ax.scatter(points[:, 0], points[:, 1], c=[cat_to_color[cat]],
+                      label=cat, s=point_size, alpha=alpha)
+
+        ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    else:
+        ax.scatter(embeddings_2d[:, 0], embeddings_2d[:, 1], s=point_size, alpha=alpha)
+
+    # Add labels if requested
+    if annotate and labels is not None:
+        for i, label in enumerate(labels):
+            ax.annotate(label, (embeddings_2d[i, 0], embeddings_2d[i, 1]),
+                       xytext=(5, 5), textcoords='offset points', fontsize=8)
+
+    ax.set_xlabel('UMAP 1', fontsize=11)
+    ax.set_ylabel('UMAP 2', fontsize=11)
+    ax.set_title(title, fontsize=12, fontweight='bold')
+    ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    return fig
+
+
+def plot_embeddings_tsne(embeddings, labels=None, categories=None, title="t-SNE Projection",
+                         figsize=(10, 8), point_size=60, alpha=0.7, annotate=False, perplexity=30):
+    """
+    Plot embeddings using t-SNE dimensionality reduction.
+
+    Args:
+        embeddings: numpy array of shape (n_samples, embedding_dim)
+        labels: Optional list of text labels for annotation
+        categories: Optional list of category names for coloring
+        title: Plot title
+        figsize: Figure size
+        point_size: Size of scatter points
+        alpha: Transparency
+        annotate: Whether to add text annotations
+        perplexity: t-SNE perplexity parameter
+
+    Returns:
+        fig: matplotlib figure
+    """
+    from sklearn.manifold import TSNE
+
+    # Reduce to 2D
+    perplexity = min(perplexity, len(embeddings) - 1)
+    reducer = TSNE(n_components=2, random_state=42, perplexity=perplexity)
+    embeddings_2d = reducer.fit_transform(embeddings)
+
+    fig, ax = plt.subplots(figsize=figsize)
+
+    if categories is not None:
+        unique_cats = list(set(categories))
+        colors = plt.cm.tab10(np.linspace(0, 1, min(len(unique_cats), 10)))
+        cat_to_color = {cat: colors[i % len(colors)] for i, cat in enumerate(unique_cats)}
+
+        for cat in unique_cats:
+            mask = [c == cat for c in categories]
+            points = embeddings_2d[np.array(mask)]
+            ax.scatter(points[:, 0], points[:, 1], c=[cat_to_color[cat]],
+                      label=cat, s=point_size, alpha=alpha)
+
+        ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    else:
+        ax.scatter(embeddings_2d[:, 0], embeddings_2d[:, 1], s=point_size, alpha=alpha)
+
+    # Add labels if requested
+    if annotate and labels is not None:
+        for i, label in enumerate(labels):
+            ax.annotate(label, (embeddings_2d[i, 0], embeddings_2d[i, 1]),
+                       xytext=(5, 5), textcoords='offset points', fontsize=8)
+
+    ax.set_xlabel('t-SNE 1', fontsize=11)
+    ax.set_ylabel('t-SNE 2', fontsize=11)
+    ax.set_title(title, fontsize=12, fontweight='bold')
+    ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    return fig
+
+
+def print_tokenization_example(text, tokenizer, name=None, max_tokens=20):
+    """
+    Print a simple tokenization example showing tokens and IDs.
+
+    Args:
+        text: Input text
+        tokenizer: HuggingFace tokenizer
+        name: Optional name for the tokenizer
+        max_tokens: Maximum tokens to display
+    """
+    tokens = tokenizer.tokenize(text)
+    token_ids = tokenizer.encode(text, add_special_tokens=False)
+
+    name = name or getattr(tokenizer, 'name_or_path', 'Tokenizer')
+    print(f"\n{name}")
+    print(f"  Vocabulary size: {tokenizer.vocab_size:,}")
+    print(f"  Input: \"{text[:80]}{'...' if len(text) > 80 else ''}\"")
+    print(f"  Tokens ({len(tokens)}): {tokens[:max_tokens]}{'...' if len(tokens) > max_tokens else ''}")
+    print(f"  IDs: {token_ids[:max_tokens]}{'...' if len(token_ids) > max_tokens else ''}")
