@@ -1,0 +1,901 @@
+id,category,problem,solution
+0,percentage,Increase 109 by 25%,136.25
+1,arithmetic,What is 76 + 55?,131.0
+2,word_problems,Sarah has $286. She spends $128. How much money does she have left?,158.0
+3,geometry,What is the circumference of a circle with radius 14? (use π ≈ 3.14),87.92
+4,geometry,What is the volume of a cube with side length 3?,27.0
+5,percentage,What is 7% of 132?,9.24
+6,word_problems,John is 10 years old now. How old was he 15 years ago?,-5.0
+7,fractions,What is 1/5 + 2/5? (decimal form),0.6
+8,percentage,What is 27% of 164?,44.28
+9,fractions,What is 2/4 + 1/4? (decimal form),0.75
+10,arithmetic,Calculate 46 + 28 - 10,64.0
+11,word_problems,Sarah has $344. She spends $134. How much money does she have left?,210.0
+12,fractions,What is 3/10 × 4? (decimal form),1.2
+13,arithmetic,What is (21 + 14) × 9?,315.0
+14,algebra,Solve for x: 9x + 13 = 103,10.0
+15,fractions,What is 1/2 × 8? (decimal form),4.0
+16,arithmetic,Divide 168 by 6,28.0
+17,geometry,What is the area of a rectangle with width 26 and height 13?,338.0
+18,fractions,What is 2/3 + 1/3? (decimal form),1.0
+19,word_problems,Sarah has $89. She spends $48. How much money does she have left?,41.0
+20,algebra,Find the positive value of x where x² = 169,13.0
+21,word_problems,A car travels at 77 km/h for 3 hours. What distance does it cover?,231.0
+22,fractions,What is 9/10 of 180?,162.0
+23,geometry,What is the area of a triangle with base 33 and height 30?,495.0
+24,fractions,What is 1/2 × 3? (decimal form),1.5
+25,geometry,What is the volume of a cube with side length 5?,125.0
+26,algebra,"If x + y = 6 and x - y = -2, what is x?",2.0
+27,fractions,What is 21/10 - 15/10? (decimal form),0.6
+28,arithmetic,Calculate 57 - 70,-13.0
+29,word_problems,John is 16 years old now. How old was he 12 years ago?,4.0
+30,algebra,"If x + y = 17 and x - y = 1, what is x?",9.0
+31,fractions,What is 1/4 of 86?,21.5
+32,arithmetic,What is 75 × 71?,5325.0
+33,word_problems,Sarah has $104. She spends $11. How much money does she have left?,93.0
+34,geometry,What is the area of a rectangle with width 15 and height 4?,60.0
+35,word_problems,A car travels at 49 km/h for 2 hours. What distance does it cover?,98.0
+36,algebra,Find the positive value of x where x² = 49,7.0
+37,geometry,What is the area of a triangle with base 40 and height 11?,220.0
+38,algebra,Solve for x: 10x + -5 = -75,-7.0
+39,percentage,Increase 93 by 25%,116.25
+40,geometry,What is the area of a rectangle with width 27 and height 22?,594.0
+41,algebra,Solve for x: 4x + -1 = 35,9.0
+42,arithmetic,Calculate 29 - 4,25.0
+43,geometry,"What is the volume of a rectangular prism with length 9, width 1, and height 9?",81.0
+44,geometry,What is the area of a triangle with base 33 and height 36?,594.0
+45,arithmetic,What is 51 × 17?,867.0
+46,word_problems,Sarah has $331. She spends $271. How much money does she have left?,60.0
+47,geometry,What is the volume of a cube with side length 10?,1000.0
+48,geometry,What is the circumference of a circle with radius 13? (use π ≈ 3.14),81.64
+49,fractions,What is 4/10 of 73?,29.2
+50,fractions,What is 3/4 × 4? (decimal form),3.0
+51,geometry,What is the area of a triangle with base 34 and height 19?,323.0
+52,arithmetic,Calculate 25 - 69,-44.0
+53,geometry,What is the volume of a cube with side length 1?,1.0
+54,fractions,What is 8/10 + 3/10? (decimal form),1.1
+55,percentage,Decrease 117 by 50%,58.5
+56,word_problems,Sarah has $462. She spends $101. How much money does she have left?,361.0
+57,fractions,What is 3/4 of 72?,54.0
+58,word_problems,A car travels at 62 km/h for 5 hours. What distance does it cover?,310.0
+59,algebra,"If x + y = 12 and x - y = 6, what is x?",9.0
+60,arithmetic,Divide 196 by 4,49.0
+61,arithmetic,Calculate 88 - 82,6.0
+62,geometry,What is the area of a triangle with base 31 and height 3?,46.5
+63,arithmetic,What is (36 + 35) × 6?,426.0
+64,algebra,"If x + y = 16 and x - y = 0, what is x?",8.0
+65,word_problems,A meeting starts at 9:00 and lasts 6 hours. At what hour does it end? (24-hour format),15.0
+66,algebra,Find the positive value of x where x² = 64,8.0
+67,arithmetic,Calculate 95 - 57,38.0
+68,geometry,What is the area of a triangle with base 36 and height 28?,504.0
+69,fractions,What is 1/2 of 182?,91.0
+70,fractions,What is 2/10 of 184?,36.8
+71,algebra,"If x + y = 7 and x - y = -3, what is x?",2.0
+72,percentage,What is 45% of 133?,59.85
+73,percentage,Increase 125 by 25%,156.25
+74,percentage,Decrease 191 by 10%,171.9
+75,percentage,What is 68% of 271?,184.28
+76,geometry,What is the area of a circle with radius 15? (use π ≈ 3.14),706.5
+77,fractions,What is 4/5 + 3/5? (decimal form),1.4
+78,geometry,What is the area of a rectangle with width 20 and height 3?,60.0
+79,geometry,What is the area of a rectangle with width 15 and height 17?,255.0
+80,geometry,What is the perimeter of a rectangle with width 13 and height 19?,64.0
+81,fractions,What is 2/10 of 194?,38.8
+82,algebra,Solve for x: 8x + 1 = 17,2.0
+83,geometry,What is the volume of a cube with side length 3?,27.0
+84,algebra,Solve for x: 9x + -6 = -24,-2.0
+85,fractions,What is 5/10 of 147?,73.5
+86,algebra,"If x + y = 19 and x - y = -1, what is x?",9.0
+87,percentage,Decrease 134 by 20%,107.2
+88,arithmetic,What is 43 + 99?,142.0
+89,percentage,Increase 133 by 75%,232.75
+90,word_problems,Sarah has $93. She spends $24. How much money does she have left?,69.0
+91,arithmetic,What is 4 + 12?,16.0
+92,fractions,What is 1/2 × 6? (decimal form),3.0
+93,arithmetic,What is (20 + 41) × 10?,610.0
+94,algebra,Find the positive value of x where x² = 36,6.0
+95,word_problems,A meeting starts at 11:00 and lasts 2 hours. At what hour does it end? (24-hour format),13.0
+96,arithmetic,What is 46 + 27?,73.0
+97,geometry,What is the volume of a cube with side length 3?,27.0
+98,arithmetic,Calculate 70 - 17,53.0
+99,fractions,What is 29/10 - 12/10? (decimal form),1.7
+100,word_problems,Sarah has $367. She spends $37. How much money does she have left?,330.0
+101,arithmetic,Calculate 76 - 29,47.0
+102,fractions,What is 1/2 × 2? (decimal form),1.0
+103,algebra,Find the positive value of x where x² = 36,6.0
+104,word_problems,John is 36 years old now. How old was he 10 years ago?,26.0
+105,percentage,Decrease 193 by 50%,96.5
+106,geometry,What is the area of a rectangle with width 17 and height 30?,510.0
+107,arithmetic,What is (16 + 18) × 4?,136.0
+108,algebra,Find the positive value of x where x² = 9,3.0
+109,fractions,What is 1/2 of 94?,47.0
+110,word_problems,John is 17 years old now. How old was he 9 years ago?,8.0
+111,geometry,What is the area of a rectangle with width 4 and height 8?,32.0
+112,fractions,What is 4/10 of 83?,33.2
+113,geometry,What is the area of a circle with radius 5? (use π ≈ 3.14),78.5
+114,arithmetic,What is (20 + 40) × 10?,600.0
+115,algebra,"If x + y = 11 and x - y = -3, what is x?",4.0
+116,algebra,Find the positive value of x where x² = 81,9.0
+117,fractions,What is 2/4 of 141?,70.5
+118,algebra,Solve for x: 5x + -2 = -17,-3.0
+119,fractions,What is 1/4 × 6? (decimal form),1.5
+120,geometry,What is the area of a triangle with base 39 and height 21?,409.5
+121,percentage,253 is what percent of 284?,89.0
+122,percentage,Increase 84 by 10%,92.4
+123,arithmetic,What is 18 × 32?,576.0
+124,fractions,What is 2/4 of 78?,39.0
+125,fractions,What is 2/4 of 87?,43.5
+126,geometry,What is the area of a rectangle with width 9 and height 18?,162.0
+127,percentage,Increase 174 by 20%,208.8
+128,algebra,Solve for x: 2x + -19 = -25,-3.0
+129,fractions,What is 2/10 × 4? (decimal form),0.8
+130,algebra,Solve for x: 10x + 4 = 44,4.0
+131,algebra,Find the positive value of x where x² = 196,14.0
+132,geometry,What is the area of a circle with radius 14? (use π ≈ 3.14),615.44
+133,geometry,"What is the volume of a rectangular prism with length 6, width 9, and height 10?",540.0
+134,fractions,What is 1/3 + 2/3? (decimal form),1.0
+135,arithmetic,What is (32 + 10) × 5?,210.0
+136,word_problems,Sarah has $220. She spends $168. How much money does she have left?,52.0
+137,arithmetic,Calculate 8 - 66,-58.0
+138,percentage,Decrease 80 by 25%,60.0
+139,word_problems,A car travels at 51 km/h for 6 hours. What distance does it cover?,306.0
+140,algebra,Solve for x: 10x + -8 = -88,-8.0
+141,percentage,107 is what percent of 447?,24.0
+142,word_problems,John is 24 years old now. How old was he 10 years ago?,14.0
+143,percentage,178 is what percent of 241?,74.0
+144,word_problems,"If one notebook costs $2.58, how much do 20 notebooks cost?",51.6
+145,algebra,"If x + y = 13 and x - y = 1, what is x?",7.0
+146,geometry,What is the perimeter of a rectangle with width 26 and height 29?,110.0
+147,fractions,What is 7/5 - 6/5? (decimal form),0.2
+148,algebra,Solve for x: 6x + 13 = 43,5.0
+149,fractions,What is 1/5 of 147?,29.4
+150,percentage,Decrease 27 by 20%,21.6
+151,algebra,"If x + y = 15 and x - y = -1, what is x?",7.0
+152,algebra,"If x + y = 8 and x - y = -6, what is x?",1.0
+153,word_problems,A car travels at 70 km/h for 7 hours. What distance does it cover?,490.0
+154,word_problems,John is 35 years old now. How old was he 11 years ago?,24.0
+155,algebra,Solve for x: 5x + 4 = -26,-6.0
+156,arithmetic,Divide 143 by 13,11.0
+157,word_problems,John is 22 years old now. How old was he 12 years ago?,10.0
+158,algebra,"If x + y = 12 and x - y = -4, what is x?",4.0
+159,geometry,What is the area of a circle with radius 18? (use π ≈ 3.14),1017.36
+160,algebra,Solve for x: 4x + 13 = 29,4.0
+161,algebra,Solve for x: 9x + 0 = -45,-5.0
+162,geometry,What is the area of a triangle with base 16 and height 7?,56.0
+163,geometry,What is the area of a triangle with base 8 and height 30?,120.0
+164,fractions,What is 1/4 × 3? (decimal form),0.75
+165,arithmetic,What is 24 + 9?,33.0
+166,fractions,What is 1/5 of 148?,29.6
+167,percentage,Decrease 63 by 50%,31.5
+168,word_problems,A meeting starts at 8:00 and lasts 6 hours. At what hour does it end? (24-hour format),14.0
+169,fractions,What is 1/2 × 6? (decimal form),3.0
+170,percentage,Increase 132 by 10%,145.2
+171,percentage,306 is what percent of 443?,69.0
+172,geometry,What is the area of a circle with radius 12? (use π ≈ 3.14),452.16
+173,fractions,What is 3/5 × 3? (decimal form),1.8
+174,arithmetic,Calculate 23 - 53,-30.0
+175,fractions,What is 3/4 of 116?,87.0
+176,geometry,What is the volume of a cube with side length 5?,125.0
+177,fractions,What is 3/4 × 9? (decimal form),6.75
+178,percentage,100 is what percent of 456?,22.0
+179,fractions,What is 1/10 + 8/10? (decimal form),0.9
+180,geometry,What is the area of a circle with radius 8? (use π ≈ 3.14),200.96
+181,word_problems,A meeting starts at 13:00 and lasts 6 hours. At what hour does it end? (24-hour format),19.0
+182,arithmetic,What is 59 + 80?,139.0
+183,percentage,Increase 59 by 10%,64.9
+184,percentage,What is 40% of 296?,118.4
+185,geometry,"What is the volume of a rectangular prism with length 10, width 4, and height 2?",80.0
+186,geometry,What is the perimeter of a rectangle with width 11 and height 25?,72.0
+187,arithmetic,What is (42 + 45) × 10?,870.0
+188,fractions,What is 12/5 - 9/5? (decimal form),0.6
+189,geometry,What is the area of a rectangle with width 7 and height 17?,119.0
+190,geometry,What is the area of a circle with radius 15? (use π ≈ 3.14),706.5
+191,arithmetic,Calculate 26 + 44 - 10,60.0
+192,word_problems,John is 18 years old now. How old was he 8 years ago?,10.0
+193,arithmetic,What is 46 × 27?,1242.0
+194,geometry,What is the circumference of a circle with radius 6? (use π ≈ 3.14),37.68
+195,word_problems,A meeting starts at 14:00 and lasts 4 hours. At what hour does it end? (24-hour format),18.0
+196,geometry,What is the circumference of a circle with radius 5? (use π ≈ 3.14),31.4
+197,word_problems,A meeting starts at 11:00 and lasts 5 hours. At what hour does it end? (24-hour format),16.0
+198,percentage,What is 58% of 475?,275.5
+199,fractions,What is 6/5 - 2/5? (decimal form),0.8
+200,arithmetic,What is 12 + 97?,109.0
+201,algebra,Find the positive value of x where x² = 81,9.0
+202,arithmetic,What is (16 + 11) × 9?,243.0
+203,percentage,82 is what percent of 179?,46.0
+204,word_problems,A meeting starts at 8:00 and lasts 3 hours. At what hour does it end? (24-hour format),11.0
+205,arithmetic,Calculate 30 - 65,-35.0
+206,word_problems,A meeting starts at 11:00 and lasts 4 hours. At what hour does it end? (24-hour format),15.0
+207,percentage,Decrease 180 by 25%,135.0
+208,algebra,Find the positive value of x where x² = 225,15.0
+209,arithmetic,Calculate 13 + 46 - 3,56.0
+210,fractions,What is 1/4 of 159?,39.75
+211,arithmetic,Calculate 5 + 25 - 8,22.0
+212,arithmetic,What is 11 + 94?,105.0
+213,algebra,Find the positive value of x where x² = 64,8.0
+214,algebra,Find the positive value of x where x² = 100,10.0
+215,arithmetic,What is 52 × 90?,4680.0
+216,arithmetic,Divide 260 by 13,20.0
+217,percentage,Decrease 117 by 25%,87.75
+218,percentage,Increase 113 by 25%,141.25
+219,algebra,"If x + y = 11 and x - y = -9, what is x?",1.0
+220,geometry,What is the area of a rectangle with width 6 and height 9?,54.0
+221,algebra,Solve for x: 2x + -4 = 0,2.0
+222,fractions,What is 1/2 of 19?,9.5
+223,algebra,"If x + y = 6 and x - y = 2, what is x?",4.0
+224,word_problems,John is 25 years old now. How old was he 6 years ago?,19.0
+225,algebra,Find the positive value of x where x² = 16,4.0
+226,percentage,What is 56% of 19?,10.64
+227,fractions,What is 2/10 + 4/10? (decimal form),0.6
+228,fractions,What is 1/4 × 2? (decimal form),0.5
+229,arithmetic,Calculate 30 + 34 - 6,58.0
+230,arithmetic,What is (46 + 21) × 5?,335.0
+231,algebra,Solve for x: 2x + -14 = -8,3.0
+232,word_problems,Sarah has $285. She spends $96. How much money does she have left?,189.0
+233,arithmetic,Calculate 31 + 33 - 10,54.0
+234,fractions,What is 4/10 of 50?,20.0
+235,algebra,Find the positive value of x where x² = 144,12.0
+236,algebra,"If x + y = 14 and x - y = 6, what is x?",10.0
+237,fractions,What is 4/5 × 6? (decimal form),4.8
+238,algebra,Find the positive value of x where x² = 4,2.0
+239,algebra,Find the positive value of x where x² = 81,9.0
+240,algebra,Find the positive value of x where x² = 25,5.0
+241,geometry,What is the area of a rectangle with width 16 and height 28?,448.0
+242,algebra,Solve for x: 9x + 16 = 97,9.0
+243,word_problems,Sarah has $103. She spends $47. How much money does she have left?,56.0
+244,algebra,Find the positive value of x where x² = 225,15.0
+245,percentage,132 is what percent of 223?,59.0
+246,percentage,Increase 132 by 10%,145.2
+247,percentage,Decrease 138 by 50%,69.0
+248,fractions,What is 4/2 - 3/2? (decimal form),0.5
+249,algebra,Find the positive value of x where x² = 36,6.0
+250,algebra,Solve for x: 3x + 5 = 20,5.0
+251,geometry,"What is the volume of a rectangular prism with length 2, width 5, and height 7?",70.0
+252,algebra,"If x + y = 6 and x - y = -4, what is x?",1.0
+253,word_problems,Sarah has $236. She spends $39. How much money does she have left?,197.0
+254,geometry,"What is the volume of a rectangular prism with length 6, width 9, and height 7?",378.0
+255,percentage,Increase 197 by 75%,344.75
+256,fractions,What is 10/5 - 7/5? (decimal form),0.6
+257,geometry,What is the area of a triangle with base 11 and height 10?,55.0
+258,algebra,Solve for x: 10x + 10 = -40,-5.0
+259,geometry,What is the perimeter of a rectangle with width 21 and height 22?,86.0
+260,arithmetic,What is 20 + 81?,101.0
+261,word_problems,John is 17 years old now. How old was he 13 years ago?,4.0
+262,algebra,Solve for x: 3x + 15 = 24,3.0
+263,word_problems,A meeting starts at 9:00 and lasts 7 hours. At what hour does it end? (24-hour format),16.0
+264,word_problems,John is 24 years old now. How old was he 8 years ago?,16.0
+265,geometry,"What is the volume of a rectangular prism with length 7, width 9, and height 6?",378.0
+266,word_problems,Sarah has $119. She spends $34. How much money does she have left?,85.0
+267,fractions,What is 11/10 - 9/10? (decimal form),0.2
+268,word_problems,"If one candie costs $3.04, how much do 6 candies cost?",18.24
+269,percentage,Increase 39 by 75%,68.25
+270,percentage,36 is what percent of 364?,10.0
+271,fractions,What is 3/4 of 113?,84.75
+272,geometry,What is the area of a rectangle with width 19 and height 28?,532.0
+273,arithmetic,What is 9 × 99?,891.0
+274,geometry,What is the perimeter of a rectangle with width 20 and height 2?,44.0
+275,fractions,What is 3/5 + 3/5? (decimal form),1.2
+276,algebra,Solve for x: 10x + -9 = -49,-4.0
+277,arithmetic,Calculate 45 - 9,36.0
+278,percentage,Decrease 99 by 25%,74.25
+279,percentage,What is 99% of 307?,303.93
+280,percentage,Increase 71 by 75%,124.25
+281,algebra,Find the positive value of x where x² = 36,6.0
+282,word_problems,Sarah has $396. She spends $286. How much money does she have left?,110.0
+283,geometry,What is the area of a rectangle with width 5 and height 24?,120.0
+284,word_problems,A meeting starts at 13:00 and lasts 2 hours. At what hour does it end? (24-hour format),15.0
+285,geometry,What is the circumference of a circle with radius 8? (use π ≈ 3.14),50.24
+286,word_problems,A meeting starts at 14:00 and lasts 2 hours. At what hour does it end? (24-hour format),16.0
+287,word_problems,"If one pen costs $6.93, how much do 6 pens cost?",41.58
+288,geometry,What is the circumference of a circle with radius 5? (use π ≈ 3.14),31.4
+289,geometry,What is the perimeter of a rectangle with width 3 and height 15?,36.0
+290,algebra,Find the positive value of x where x² = 121,11.0
+291,arithmetic,What is 29 × 18?,522.0
+292,algebra,Find the positive value of x where x² = 16,4.0
+293,algebra,Find the positive value of x where x² = 1,1.0
+294,word_problems,"If one pen costs $5.35, how much do 10 pens cost?",53.5
+295,geometry,What is the area of a circle with radius 2? (use π ≈ 3.14),12.56
+296,geometry,What is the area of a triangle with base 17 and height 10?,85.0
+297,percentage,Increase 105 by 10%,115.5
+298,percentage,Decrease 75 by 20%,60.0
+299,arithmetic,Calculate 20 + 43 - 8,55.0
+300,algebra,"If x + y = 5 and x - y = -1, what is x?",2.0
+301,algebra,"If x + y = 16 and x - y = 4, what is x?",10.0
+302,geometry,What is the perimeter of a rectangle with width 25 and height 8?,66.0
+303,arithmetic,Calculate 75 - 77,-2.0
+304,geometry,What is the volume of a cube with side length 5?,125.0
+305,word_problems,A car travels at 66 km/h for 3 hours. What distance does it cover?,198.0
+306,percentage,29 is what percent of 68?,42.0
+307,geometry,What is the area of a circle with radius 5? (use π ≈ 3.14),78.5
+308,arithmetic,What is (28 + 22) × 6?,300.0
+309,geometry,What is the area of a triangle with base 18 and height 22?,198.0
+310,geometry,What is the circumference of a circle with radius 1? (use π ≈ 3.14),6.28
+311,word_problems,A car travels at 48 km/h for 2 hours. What distance does it cover?,96.0
+312,geometry,What is the area of a rectangle with width 25 and height 13?,325.0
+313,geometry,What is the area of a rectangle with width 2 and height 26?,52.0
+314,arithmetic,What is 85 + 30?,115.0
+315,percentage,211 is what percent of 431?,49.0
+316,geometry,What is the area of a circle with radius 4? (use π ≈ 3.14),50.24
+317,arithmetic,Divide 260 by 20,13.0
+318,percentage,What is 72% of 357?,257.04
+319,algebra,"If x + y = 14 and x - y = 4, what is x?",9.0
+320,arithmetic,Calculate 48 + 35 - 2,81.0
+321,algebra,Find the positive value of x where x² = 1,1.0
+322,fractions,What is 4/2 - 2/2? (decimal form),1.0
+323,algebra,"If x + y = 10 and x - y = 6, what is x?",8.0
+324,word_problems,A car travels at 74 km/h for 6 hours. What distance does it cover?,444.0
+325,algebra,Solve for x: 5x + -1 = -16,-3.0
+326,word_problems,"If one pen costs $4.86, how much do 15 pens cost?",72.9
+327,word_problems,John is 39 years old now. How old was he 14 years ago?,25.0
+328,geometry,What is the volume of a cube with side length 3?,27.0
+329,word_problems,John is 34 years old now. How old was he 12 years ago?,22.0
+330,algebra,"If x + y = 5 and x - y = -1, what is x?",2.0
+331,arithmetic,What is 96 + 71?,167.0
+332,arithmetic,Divide 33 by 3,11.0
+333,percentage,Decrease 110 by 10%,99.0
+334,word_problems,"If one notebook costs $1.82, how much do 18 notebooks cost?",32.76
+335,geometry,What is the circumference of a circle with radius 9? (use π ≈ 3.14),56.52
+336,algebra,"If x + y = 7 and x - y = 3, what is x?",5.0
+337,percentage,125 is what percent of 198?,63.0
+338,arithmetic,What is (36 + 15) × 7?,357.0
+339,word_problems,A car travels at 52 km/h for 4 hours. What distance does it cover?,208.0
+340,word_problems,Sarah has $467. She spends $431. How much money does she have left?,36.0
+341,fractions,What is 3/4 of 67?,50.25
+342,geometry,What is the area of a rectangle with width 15 and height 3?,45.0
+343,fractions,What is 12/4 - 5/4? (decimal form),1.75
+344,arithmetic,Calculate 13 + 10 - 7,16.0
+345,arithmetic,What is (22 + 7) × 5?,145.0
+346,arithmetic,What is 85 × 14?,1190.0
+347,fractions,What is 2/4 + 3/4? (decimal form),1.25
+348,percentage,Decrease 159 by 25%,119.25
+349,algebra,Solve for x: 6x + 17 = 23,1.0
+350,algebra,"If x + y = 6 and x - y = 2, what is x?",4.0
+351,arithmetic,What is 30 + 5?,35.0
+352,percentage,What is 7% of 89?,6.23
+353,geometry,What is the area of a circle with radius 1? (use π ≈ 3.14),3.14
+354,arithmetic,Calculate 7 + 5 - 10,2.0
+355,algebra,Solve for x: 2x + 6 = 14,4.0
+356,arithmetic,What is (22 + 40) × 7?,434.0
+357,arithmetic,Divide 115 by 5,23.0
+358,arithmetic,What is 59 × 37?,2183.0
+359,word_problems,A meeting starts at 12:00 and lasts 6 hours. At what hour does it end? (24-hour format),18.0
+360,algebra,Find the positive value of x where x² = 169,13.0
+361,arithmetic,What is (8 + 47) × 6?,330.0
+362,algebra,Solve for x: 3x + -3 = 9,4.0
+363,percentage,What is 8% of 198?,15.84
+364,fractions,What is 14/5 - 1/5? (decimal form),2.6
+365,percentage,Increase 85 by 20%,102.0
+366,percentage,56 is what percent of 165?,34.0
+367,word_problems,Sarah has $461. She spends $451. How much money does she have left?,10.0
+368,geometry,What is the volume of a cube with side length 2?,8.0
+369,geometry,"What is the volume of a rectangular prism with length 10, width 10, and height 8?",800.0
+370,fractions,What is 3/4 of 164?,123.0
+371,percentage,93 is what percent of 491?,19.0
+372,percentage,Decrease 53 by 10%,47.7
+373,geometry,What is the perimeter of a rectangle with width 5 and height 26?,62.0
+374,fractions,What is 3/10 + 7/10? (decimal form),1.0
+375,percentage,Decrease 77 by 10%,69.3
+376,percentage,92 is what percent of 354?,26.0
+377,fractions,What is 6/2 - 2/2? (decimal form),2.0
+378,word_problems,A meeting starts at 11:00 and lasts 5 hours. At what hour does it end? (24-hour format),16.0
+379,percentage,190 is what percent of 333?,57.0
+380,algebra,"If x + y = 11 and x - y = 5, what is x?",8.0
+381,geometry,What is the perimeter of a rectangle with width 17 and height 14?,62.0
+382,percentage,119 is what percent of 189?,63.0
+383,percentage,262 is what percent of 430?,61.0
+384,fractions,What is 1/2 + 1/2? (decimal form),1.0
+385,geometry,What is the area of a rectangle with width 5 and height 2?,10.0
+386,word_problems,"If one candie costs $1.01, how much do 14 candies cost?",14.14
+387,word_problems,A car travels at 75 km/h for 5 hours. What distance does it cover?,375.0
+388,arithmetic,What is 45 × 83?,3735.0
+389,word_problems,John is 11 years old now. How old was he 6 years ago?,5.0
+390,arithmetic,What is 65 × 63?,4095.0
+391,algebra,Find the positive value of x where x² = 4,2.0
+392,fractions,What is 3/5 × 7? (decimal form),4.2
+393,fractions,What is 4/5 × 8? (decimal form),6.4
+394,fractions,What is 1/5 × 6? (decimal form),1.2
+395,fractions,What is 9/10 + 5/10? (decimal form),1.4
+396,percentage,What is 58% of 62?,35.96
+397,fractions,What is 8/4 - 5/4? (decimal form),0.75
+398,word_problems,A car travels at 59 km/h for 2 hours. What distance does it cover?,118.0
+399,percentage,Increase 151 by 10%,166.1
+400,arithmetic,What is (42 + 20) × 9?,558.0
+401,algebra,Solve for x: 4x + -19 = -55,-9.0
+402,percentage,Decrease 90 by 10%,81.0
+403,word_problems,A car travels at 38 km/h for 4 hours. What distance does it cover?,152.0
+404,geometry,What is the area of a triangle with base 37 and height 2?,37.0
+405,algebra,"If x + y = 16 and x - y = 2, what is x?",9.0
+406,word_problems,Sarah has $300. She spends $95. How much money does she have left?,205.0
+407,word_problems,"If one book costs $4.76, how much do 16 books cost?",76.16
+408,geometry,What is the area of a rectangle with width 13 and height 9?,117.0
+409,geometry,What is the area of a triangle with base 14 and height 17?,119.0
+410,algebra,Solve for x: 10x + -19 = 1,2.0
+411,fractions,What is 1/4 × 5? (decimal form),1.25
+412,percentage,Increase 55 by 10%,60.5
+413,percentage,Increase 135 by 25%,168.75
+414,word_problems,A meeting starts at 11:00 and lasts 4 hours. At what hour does it end? (24-hour format),15.0
+415,arithmetic,What is 49 + 36?,85.0
+416,geometry,What is the circumference of a circle with radius 13? (use π ≈ 3.14),81.64
+417,fractions,What is 8/10 × 10? (decimal form),8.0
+418,percentage,246 is what percent of 373?,66.0
+419,fractions,What is 2/10 × 2? (decimal form),0.4
+420,fractions,What is 11/5 - 6/5? (decimal form),1.0
+421,geometry,What is the area of a circle with radius 4? (use π ≈ 3.14),50.24
+422,algebra,Find the positive value of x where x² = 169,13.0
+423,fractions,What is 2/5 + 4/5? (decimal form),1.2
+424,percentage,245 is what percent of 365?,67.0
+425,word_problems,"If one candie costs $8.06, how much do 3 candies cost?",24.18
+426,word_problems,John is 29 years old now. How old was he 8 years ago?,21.0
+427,arithmetic,Calculate 32 + 6 - 2,36.0
+428,geometry,What is the area of a triangle with base 38 and height 20?,380.0
+429,arithmetic,What is 15 + 10?,25.0
+430,algebra,"If x + y = 11 and x - y = 9, what is x?",10.0
+431,percentage,Decrease 49 by 25%,36.75
+432,arithmetic,Calculate 1 + 44 - 3,42.0
+433,word_problems,"If one pen costs $5.85, how much do 20 pens cost?",117.0
+434,percentage,Increase 59 by 50%,88.5
+435,geometry,"What is the volume of a rectangular prism with length 4, width 10, and height 6?",240.0
+436,algebra,Find the positive value of x where x² = 9,3.0
+437,percentage,301 is what percent of 436?,69.0
+438,fractions,What is 3/2 - 2/2? (decimal form),0.5
+439,word_problems,"If one apple costs $1.91, how much do 19 apples cost?",36.29
+440,arithmetic,Calculate 9 - 44,-35.0
+441,arithmetic,Calculate 65 - 34,31.0
+442,percentage,Decrease 190 by 25%,142.5
+443,fractions,What is 3/4 + 2/4? (decimal form),1.25
+444,arithmetic,What is 28 + 73?,101.0
+445,percentage,Decrease 76 by 25%,57.0
+446,arithmetic,Divide 280 by 8,35.0
+447,arithmetic,What is 43 + 10?,53.0
+448,geometry,What is the volume of a cube with side length 1?,1.0
+449,fractions,What is 1/4 of 44?,11.0
+450,arithmetic,Calculate 70 - 100,-30.0
+451,algebra,"If x + y = 11 and x - y = -1, what is x?",5.0
+452,arithmetic,What is 65 × 98?,6370.0
+453,word_problems,A meeting starts at 10:00 and lasts 2 hours. At what hour does it end? (24-hour format),12.0
+454,algebra,"If x + y = 15 and x - y = 5, what is x?",10.0
+455,geometry,What is the area of a rectangle with width 16 and height 26?,416.0
+456,fractions,What is 3/10 + 8/10? (decimal form),1.1
+457,word_problems,"If one apple costs $4.1, how much do 15 apples cost?",61.5
+458,geometry,What is the area of a triangle with base 12 and height 18?,108.0
+459,percentage,What is 12% of 435?,52.2
+460,arithmetic,What is 94 + 59?,153.0
+461,word_problems,John is 40 years old now. How old was he 5 years ago?,35.0
+462,percentage,Decrease 42 by 50%,21.0
+463,percentage,What is 78% of 485?,378.3
+464,word_problems,A car travels at 53 km/h for 7 hours. What distance does it cover?,371.0
+465,geometry,What is the area of a rectangle with width 1 and height 21?,21.0
+466,arithmetic,Calculate 41 + 11 - 10,42.0
+467,algebra,Find the positive value of x where x² = 169,13.0
+468,algebra,"If x + y = 9 and x - y = 1, what is x?",5.0
+469,algebra,Solve for x: 9x + 19 = -53,-8.0
+470,word_problems,A car travels at 77 km/h for 5 hours. What distance does it cover?,385.0
+471,geometry,"What is the volume of a rectangular prism with length 1, width 5, and height 5?",25.0
+472,geometry,What is the area of a circle with radius 17? (use π ≈ 3.14),907.46
+473,arithmetic,Calculate 61 - 53,8.0
+474,percentage,Increase 190 by 10%,209.0
+475,word_problems,"If one apple costs $4.42, how much do 3 apples cost?",13.26
+476,geometry,What is the volume of a cube with side length 2?,8.0
+477,arithmetic,What is 97 × 10?,970.0
+478,arithmetic,What is 11 × 30?,330.0
+479,fractions,What is 14/5 - 6/5? (decimal form),1.6
+480,word_problems,Sarah has $259. She spends $185. How much money does she have left?,74.0
+481,geometry,What is the circumference of a circle with radius 17? (use π ≈ 3.14),106.76
+482,geometry,"What is the volume of a rectangular prism with length 5, width 4, and height 10?",200.0
+483,fractions,What is 5/2 - 4/2? (decimal form),0.5
+484,fractions,What is 1/2 + 1/2? (decimal form),1.0
+485,geometry,What is the perimeter of a rectangle with width 13 and height 28?,82.0
+486,fractions,What is 1/4 × 4? (decimal form),1.0
+487,arithmetic,Divide 210 by 7,30.0
+488,word_problems,"If one apple costs $3.86, how much do 5 apples cost?",19.3
+489,geometry,What is the circumference of a circle with radius 17? (use π ≈ 3.14),106.76
+490,word_problems,"If one candie costs $5.93, how much do 10 candies cost?",59.3
+491,percentage,259 is what percent of 360?,72.0
+492,arithmetic,Divide 144 by 18,8.0
+493,word_problems,John is 31 years old now. How old was he 6 years ago?,25.0
+494,percentage,37 is what percent of 116?,32.0
+495,percentage,What is 41% of 228?,93.48
+496,geometry,What is the volume of a cube with side length 9?,729.0
+497,percentage,Increase 118 by 10%,129.8
+498,word_problems,"If one book costs $0.65, how much do 13 books cost?",8.45
+499,percentage,Decrease 103 by 10%,92.7
+500,fractions,What is 29/10 - 24/10? (decimal form),0.5
+501,arithmetic,Divide 68 by 2,34.0
+502,percentage,What is 52% of 20?,10.4
+503,algebra,Solve for x: 9x + -19 = 44,7.0
+504,fractions,What is 3/4 of 83?,62.25
+505,arithmetic,Divide 16 by 2,8.0
+506,word_problems,A meeting starts at 9:00 and lasts 6 hours. At what hour does it end? (24-hour format),15.0
+507,fractions,What is 4/5 × 7? (decimal form),5.6
+508,word_problems,Sarah has $99. She spends $66. How much money does she have left?,33.0
+509,geometry,What is the area of a rectangle with width 2 and height 11?,22.0
+510,geometry,What is the perimeter of a rectangle with width 6 and height 3?,18.0
+511,arithmetic,What is 100 × 72?,7200.0
+512,word_problems,A meeting starts at 8:00 and lasts 8 hours. At what hour does it end? (24-hour format),16.0
+513,word_problems,John is 18 years old now. How old was he 12 years ago?,6.0
+514,fractions,What is 15/5 - 2/5? (decimal form),2.6
+515,percentage,Decrease 140 by 20%,112.0
+516,geometry,What is the area of a triangle with base 4 and height 25?,50.0
+517,algebra,Solve for x: 6x + 16 = -38,-9.0
+518,fractions,What is 9/10 of 145?,130.5
+519,word_problems,John is 22 years old now. How old was he 9 years ago?,13.0
+520,word_problems,A meeting starts at 13:00 and lasts 2 hours. At what hour does it end? (24-hour format),15.0
+521,algebra,Solve for x: 8x + 11 = 67,7.0
+522,percentage,What is 23% of 497?,114.31
+523,word_problems,A car travels at 61 km/h for 7 hours. What distance does it cover?,427.0
+524,word_problems,"If one book costs $5.25, how much do 5 books cost?",26.25
+525,geometry,What is the volume of a cube with side length 5?,125.0
+526,arithmetic,What is (45 + 13) × 6?,348.0
+527,arithmetic,Calculate 13 - 13,0.0
+528,geometry,What is the perimeter of a rectangle with width 8 and height 15?,46.0
+529,fractions,What is 6/4 - 4/4? (decimal form),0.5
+530,percentage,273 is what percent of 497?,55.0
+531,word_problems,Sarah has $168. She spends $29. How much money does she have left?,139.0
+532,fractions,What is 1/2 of 142?,71.0
+533,word_problems,A car travels at 73 km/h for 6 hours. What distance does it cover?,438.0
+534,percentage,Decrease 119 by 50%,59.5
+535,geometry,What is the circumference of a circle with radius 16? (use π ≈ 3.14),100.48
+536,percentage,69 is what percent of 130?,53.0
+537,algebra,Solve for x: 3x + -10 = -13,-1.0
+538,arithmetic,What is (35 + 49) × 6?,504.0
+539,word_problems,A meeting starts at 14:00 and lasts 3 hours. At what hour does it end? (24-hour format),17.0
+540,algebra,Find the positive value of x where x² = 1,1.0
+541,word_problems,Sarah has $213. She spends $84. How much money does she have left?,129.0
+542,fractions,What is 2/2 - 1/2? (decimal form),0.5
+543,percentage,266 is what percent of 359?,74.0
+544,percentage,242 is what percent of 466?,52.0
+545,algebra,Solve for x: 2x + 2 = 16,7.0
+546,percentage,Decrease 31 by 20%,24.8
+547,fractions,What is 3/4 of 141?,105.75
+548,arithmetic,Calculate 21 + 17 - 5,33.0
+549,algebra,"If x + y = 15 and x - y = 5, what is x?",10.0
+550,geometry,What is the volume of a cube with side length 2?,8.0
+551,word_problems,Sarah has $354. She spends $325. How much money does she have left?,29.0
+552,percentage,What is 11% of 19?,2.09
+553,word_problems,A meeting starts at 9:00 and lasts 4 hours. At what hour does it end? (24-hour format),13.0
+554,geometry,What is the area of a circle with radius 10? (use π ≈ 3.14),314.0
+555,percentage,Decrease 167 by 50%,83.5
+556,algebra,Solve for x: 2x + -1 = 15,8.0
+557,arithmetic,What is (18 + 45) × 3?,189.0
+558,geometry,What is the area of a circle with radius 9? (use π ≈ 3.14),254.34
+559,arithmetic,Calculate 2 + 36 - 5,33.0
+560,arithmetic,What is 23 × 75?,1725.0
+561,algebra,Find the positive value of x where x² = 9,3.0
+562,fractions,What is 29/10 - 21/10? (decimal form),0.8
+563,algebra,"If x + y = 9 and x - y = -1, what is x?",4.0
+564,percentage,What is 84% of 343?,288.12
+565,percentage,311 is what percent of 379?,82.0
+566,geometry,"What is the volume of a rectangular prism with length 9, width 4, and height 10?",360.0
+567,algebra,Find the positive value of x where x² = 4,2.0
+568,algebra,Solve for x: 10x + -6 = 94,10.0
+569,algebra,Find the positive value of x where x² = 25,5.0
+570,algebra,"If x + y = 5 and x - y = -1, what is x?",2.0
+571,word_problems,"If one pen costs $4.18, how much do 16 pens cost?",66.88
+572,fractions,What is 1/3 + 2/3? (decimal form),1.0
+573,word_problems,A car travels at 30 km/h for 3 hours. What distance does it cover?,90.0
+574,percentage,Increase 191 by 75%,334.25
+575,percentage,What is 26% of 463?,120.38
+576,word_problems,A meeting starts at 12:00 and lasts 5 hours. At what hour does it end? (24-hour format),17.0
+577,algebra,Find the positive value of x where x² = 25,5.0
+578,algebra,Solve for x: 6x + 10 = 40,5.0
+579,geometry,What is the perimeter of a rectangle with width 27 and height 28?,110.0
+580,fractions,What is 1/5 × 6? (decimal form),1.2
+581,geometry,What is the volume of a cube with side length 7?,343.0
+582,percentage,Decrease 45 by 10%,40.5
+583,percentage,Increase 56 by 75%,98.0
+584,algebra,Find the positive value of x where x² = 25,5.0
+585,fractions,What is 9/4 - 4/4? (decimal form),1.25
+586,fractions,What is 17/10 - 11/10? (decimal form),0.6
+587,percentage,What is 96% of 388?,372.48
+588,word_problems,A meeting starts at 11:00 and lasts 5 hours. At what hour does it end? (24-hour format),16.0
+589,geometry,What is the volume of a cube with side length 3?,27.0
+590,percentage,Decrease 41 by 20%,32.8
+591,fractions,What is 10/4 - 5/4? (decimal form),1.25
+592,algebra,Find the positive value of x where x² = 25,5.0
+593,algebra,Find the positive value of x where x² = 225,15.0
+594,geometry,What is the volume of a cube with side length 3?,27.0
+595,fractions,What is 16/10 - 7/10? (decimal form),0.9
+596,word_problems,Sarah has $458. She spends $159. How much money does she have left?,299.0
+597,algebra,Find the positive value of x where x² = 25,5.0
+598,geometry,What is the area of a triangle with base 30 and height 4?,60.0
+599,fractions,What is 1/2 + 1/2? (decimal form),1.0
+600,arithmetic,What is (38 + 28) × 8?,528.0
+601,algebra,Find the positive value of x where x² = 49,7.0
+602,arithmetic,What is 4 × 15?,60.0
+603,word_problems,"If one apple costs $4.72, how much do 12 apples cost?",56.64
+604,geometry,What is the perimeter of a rectangle with width 28 and height 25?,106.0
+605,geometry,What is the perimeter of a rectangle with width 1 and height 12?,26.0
+606,word_problems,A car travels at 69 km/h for 6 hours. What distance does it cover?,414.0
+607,fractions,What is 15/5 - 8/5? (decimal form),1.4
+608,fractions,What is 25/10 - 12/10? (decimal form),1.3
+609,arithmetic,What is (22 + 8) × 6?,180.0
+610,word_problems,John is 13 years old now. How old was he 7 years ago?,6.0
+611,fractions,What is 1/4 × 10? (decimal form),2.5
+612,algebra,Solve for x: 2x + 19 = 7,-6.0
+613,percentage,Increase 36 by 50%,54.0
+614,percentage,210 is what percent of 318?,66.0
+615,fractions,What is 1/2 of 24?,12.0
+616,algebra,Find the positive value of x where x² = 16,4.0
+617,word_problems,"If one candie costs $6.76, how much do 18 candies cost?",121.68
+618,fractions,What is 6/4 - 3/4? (decimal form),0.75
+619,word_problems,A meeting starts at 9:00 and lasts 5 hours. At what hour does it end? (24-hour format),14.0
+620,percentage,239 is what percent of 347?,69.0
+621,fractions,What is 8/10 of 88?,70.4
+622,word_problems,Sarah has $323. She spends $269. How much money does she have left?,54.0
+623,geometry,What is the area of a triangle with base 37 and height 36?,666.0
+624,fractions,What is 1/2 × 8? (decimal form),4.0
+625,geometry,What is the area of a rectangle with width 22 and height 12?,264.0
+626,percentage,Decrease 81 by 50%,40.5
+627,arithmetic,Divide 752 by 16,47.0
+628,percentage,Decrease 193 by 10%,173.7
+629,word_problems,Sarah has $262. She spends $191. How much money does she have left?,71.0
+630,arithmetic,Calculate 29 + 8 - 5,32.0
+631,percentage,What is 35% of 236?,82.6
+632,algebra,Solve for x: 3x + -8 = -8,0.0
+633,fractions,What is 20/10 - 16/10? (decimal form),0.4
+634,geometry,"What is the volume of a rectangular prism with length 1, width 4, and height 5?",20.0
+635,arithmetic,What is 52 × 35?,1820.0
+636,word_problems,Sarah has $197. She spends $45. How much money does she have left?,152.0
+637,word_problems,A meeting starts at 9:00 and lasts 4 hours. At what hour does it end? (24-hour format),13.0
+638,word_problems,Sarah has $328. She spends $28. How much money does she have left?,300.0
+639,word_problems,Sarah has $355. She spends $80. How much money does she have left?,275.0
+640,algebra,"If x + y = 12 and x - y = -2, what is x?",5.0
+641,algebra,"If x + y = 14 and x - y = -4, what is x?",5.0
+642,percentage,22 is what percent of 122?,18.0
+643,percentage,Increase 178 by 10%,195.8
+644,geometry,What is the circumference of a circle with radius 9? (use π ≈ 3.14),56.52
+645,percentage,160 is what percent of 262?,61.0
+646,algebra,Find the positive value of x where x² = 81,9.0
+647,arithmetic,Calculate 28 - 98,-70.0
+648,fractions,What is 5/4 - 4/4? (decimal form),0.25
+649,word_problems,A meeting starts at 8:00 and lasts 7 hours. At what hour does it end? (24-hour format),15.0
+650,arithmetic,Calculate 35 - 37,-2.0
+651,algebra,"If x + y = 16 and x - y = 4, what is x?",10.0
+652,algebra,Find the positive value of x where x² = 144,12.0
+653,arithmetic,What is 31 + 73?,104.0
+654,percentage,Increase 89 by 50%,133.5
+655,percentage,What is 54% of 37?,19.98
+656,geometry,What is the perimeter of a rectangle with width 15 and height 15?,60.0
+657,arithmetic,What is 86 + 71?,157.0
+658,geometry,What is the area of a rectangle with width 15 and height 12?,180.0
+659,fractions,What is 2/2 - 1/2? (decimal form),0.5
+660,algebra,"If x + y = 11 and x - y = 5, what is x?",8.0
+661,arithmetic,Calculate 50 + 9 - 4,55.0
+662,algebra,Find the positive value of x where x² = 121,11.0
+663,geometry,"What is the volume of a rectangular prism with length 6, width 2, and height 4?",48.0
+664,fractions,What is 1/2 of 27?,13.5
+665,arithmetic,What is 76 + 71?,147.0
+666,percentage,What is 38% of 113?,42.94
+667,fractions,What is 1/4 × 8? (decimal form),2.0
+668,percentage,102 is what percent of 179?,57.0
+669,percentage,What is 83% of 353?,292.99
+670,geometry,What is the circumference of a circle with radius 13? (use π ≈ 3.14),81.64
+671,geometry,What is the volume of a cube with side length 8?,512.0
+672,fractions,What is 26/10 - 13/10? (decimal form),1.3
+673,arithmetic,What is 6 × 91?,546.0
+674,algebra,Find the positive value of x where x² = 49,7.0
+675,percentage,Increase 129 by 75%,225.75
+676,arithmetic,What is (7 + 4) × 8?,88.0
+677,algebra,Find the positive value of x where x² = 144,12.0
+678,arithmetic,Calculate 10 - 57,-47.0
+679,word_problems,A car travels at 73 km/h for 5 hours. What distance does it cover?,365.0
+680,arithmetic,Calculate 28 + 23 - 7,44.0
+681,fractions,What is 1/5 × 3? (decimal form),0.6
+682,percentage,Increase 148 by 75%,259.0
+683,percentage,320 is what percent of 410?,78.0
+684,percentage,Increase 195 by 50%,292.5
+685,word_problems,A meeting starts at 13:00 and lasts 7 hours. At what hour does it end? (24-hour format),20.0
+686,geometry,What is the volume of a cube with side length 5?,125.0
+687,geometry,What is the area of a triangle with base 28 and height 13?,182.0
+688,geometry,What is the circumference of a circle with radius 9? (use π ≈ 3.14),56.52
+689,percentage,What is 12% of 231?,27.72
+690,fractions,What is 5/5 - 1/5? (decimal form),0.8
+691,algebra,Solve for x: 2x + -11 = -23,-6.0
+692,percentage,32 is what percent of 197?,16.0
+693,word_problems,John is 22 years old now. How old was he 7 years ago?,15.0
+694,arithmetic,What is 68 × 78?,5304.0
+695,arithmetic,Calculate 88 - 55,33.0
+696,algebra,"If x + y = 11 and x - y = -5, what is x?",3.0
+697,algebra,Solve for x: 9x + 11 = 47,4.0
+698,arithmetic,What is 78 × 34?,2652.0
+699,arithmetic,What is 10 + 91?,101.0
+700,percentage,176 is what percent of 235?,75.0
+701,arithmetic,Calculate 19 + 41 - 7,53.0
+702,arithmetic,What is (37 + 37) × 9?,666.0
+703,geometry,"What is the volume of a rectangular prism with length 3, width 2, and height 1?",6.0
+704,algebra,Find the positive value of x where x² = 121,11.0
+705,fractions,What is 1/2 + 1/2? (decimal form),1.0
+706,percentage,What is 32% of 233?,74.56
+707,geometry,What is the area of a triangle with base 32 and height 26?,416.0
+708,geometry,What is the circumference of a circle with radius 12? (use π ≈ 3.14),75.36
+709,percentage,Increase 102 by 75%,178.5
+710,geometry,What is the area of a triangle with base 29 and height 11?,159.5
+711,fractions,What is 4/5 of 124?,99.2
+712,algebra,Solve for x: 5x + 16 = 56,8.0
+713,word_problems,"If one book costs $3.14, how much do 9 books cost?",28.26
+714,arithmetic,What is 14 × 12?,168.0
+715,percentage,Decrease 130 by 10%,117.0
+716,word_problems,A car travels at 65 km/h for 3 hours. What distance does it cover?,195.0
+717,percentage,39 is what percent of 133?,29.0
+718,percentage,Decrease 54 by 10%,48.6
+719,percentage,Decrease 59 by 50%,29.5
+720,algebra,"If x + y = 7 and x - y = 5, what is x?",6.0
+721,arithmetic,Calculate 48 - 37,11.0
+722,geometry,"What is the volume of a rectangular prism with length 1, width 5, and height 6?",30.0
+723,word_problems,A meeting starts at 11:00 and lasts 8 hours. At what hour does it end? (24-hour format),19.0
+724,algebra,Find the positive value of x where x² = 4,2.0
+725,arithmetic,What is 40 × 31?,1240.0
+726,percentage,Decrease 151 by 50%,75.5
+727,algebra,"If x + y = 9 and x - y = -1, what is x?",4.0
+728,geometry,What is the circumference of a circle with radius 8? (use π ≈ 3.14),50.24
+729,algebra,Find the positive value of x where x² = 169,13.0
+730,percentage,Increase 47 by 25%,58.75
+731,percentage,What is 92% of 443?,407.56
+732,percentage,What is 12% of 392?,47.04
+733,algebra,Find the positive value of x where x² = 49,7.0
+734,algebra,Solve for x: 6x + -2 = 22,4.0
+735,fractions,What is 3/4 + 2/4? (decimal form),1.25
+736,arithmetic,Divide 410 by 10,41.0
+737,fractions,What is 3/5 + 3/5? (decimal form),1.2
+738,algebra,Solve for x: 2x + -4 = 6,5.0
+739,percentage,What is 37% of 52?,19.24
+740,fractions,What is 3/5 + 1/5? (decimal form),0.8
+741,percentage,Increase 99 by 50%,148.5
+742,percentage,Increase 114 by 75%,199.5
+743,percentage,Increase 80 by 10%,88.0
+744,algebra,Find the positive value of x where x² = 49,7.0
+745,arithmetic,Calculate 7 + 4 - 10,1.0
+746,percentage,What is 41% of 487?,199.67
+747,word_problems,"If one book costs $2.08, how much do 14 books cost?",29.12
+748,word_problems,A car travels at 52 km/h for 2 hours. What distance does it cover?,104.0
+749,fractions,What is 1/4 × 5? (decimal form),1.25
+750,algebra,"If x + y = 16 and x - y = -4, what is x?",6.0
+751,fractions,What is 17/10 - 9/10? (decimal form),0.8
+752,word_problems,A meeting starts at 13:00 and lasts 8 hours. At what hour does it end? (24-hour format),21.0
+753,geometry,What is the volume of a cube with side length 5?,125.0
+754,fractions,What is 2/5 of 127?,50.8
+755,percentage,Increase 74 by 25%,92.5
+756,arithmetic,What is 7 × 12?,84.0
+757,arithmetic,What is 53 × 86?,4558.0
+758,arithmetic,Divide 185 by 5,37.0
+759,arithmetic,Calculate 22 - 53,-31.0
+760,algebra,"If x + y = 11 and x - y = 9, what is x?",10.0
+761,geometry,What is the volume of a cube with side length 7?,343.0
+762,fractions,What is 1/2 × 4? (decimal form),2.0
+763,word_problems,"If one pen costs $5.51, how much do 18 pens cost?",99.18
+764,word_problems,Sarah has $435. She spends $179. How much money does she have left?,256.0
+765,arithmetic,What is 5 × 14?,70.0
+766,percentage,Increase 56 by 25%,70.0
+767,fractions,What is 1/2 of 174?,87.0
+768,fractions,What is 2/5 of 194?,77.6
+769,word_problems,Sarah has $372. She spends $104. How much money does she have left?,268.0
+770,geometry,What is the area of a triangle with base 16 and height 6?,48.0
+771,algebra,Solve for x: 5x + 6 = 16,2.0
+772,word_problems,John is 15 years old now. How old was he 7 years ago?,8.0
+773,word_problems,A meeting starts at 9:00 and lasts 8 hours. At what hour does it end? (24-hour format),17.0
+774,word_problems,A meeting starts at 14:00 and lasts 7 hours. At what hour does it end? (24-hour format),21.0
+775,percentage,Decrease 149 by 10%,134.1
+776,percentage,67 is what percent of 78?,86.0
+777,arithmetic,What is (4 + 15) × 3?,57.0
+778,arithmetic,Divide 117 by 9,13.0
+779,fractions,What is 4/5 × 10? (decimal form),8.0
+780,percentage,129 is what percent of 143?,90.0
+781,arithmetic,What is 40 + 47?,87.0
+782,fractions,What is 1/4 × 7? (decimal form),1.75
+783,geometry,What is the area of a circle with radius 4? (use π ≈ 3.14),50.24
+784,arithmetic,Divide 96 by 6,16.0
+785,algebra,"If x + y = 18 and x - y = 2, what is x?",10.0
+786,geometry,What is the area of a circle with radius 2? (use π ≈ 3.14),12.56
+787,algebra,Find the positive value of x where x² = 4,2.0
+788,arithmetic,Divide 740 by 20,37.0
+789,word_problems,A meeting starts at 14:00 and lasts 8 hours. At what hour does it end? (24-hour format),22.0
+790,word_problems,Sarah has $93. She spends $47. How much money does she have left?,46.0
+791,arithmetic,Divide 50 by 2,25.0
+792,geometry,"What is the volume of a rectangular prism with length 2, width 8, and height 3?",48.0
+793,algebra,Solve for x: 4x + 10 = -18,-7.0
+794,arithmetic,Calculate 16 + 18 - 9,25.0
+795,geometry,What is the area of a circle with radius 15? (use π ≈ 3.14),706.5
+796,fractions,What is 2/5 × 6? (decimal form),2.4
+797,fractions,What is 23/10 - 16/10? (decimal form),0.7
+798,geometry,What is the area of a rectangle with width 30 and height 10?,300.0
+799,arithmetic,Calculate 14 + 46 - 7,53.0
+800,word_problems,A car travels at 74 km/h for 3 hours. What distance does it cover?,222.0
+801,fractions,What is 10/5 - 6/5? (decimal form),0.8
+802,arithmetic,Divide 261 by 9,29.0
+803,arithmetic,Calculate 18 + 1 - 4,15.0
+804,geometry,What is the area of a rectangle with width 10 and height 16?,160.0
+805,fractions,What is 1/2 of 91?,45.5
+806,percentage,Increase 116 by 50%,174.0
+807,algebra,Solve for x: 7x + -6 = 64,10.0
+808,percentage,Decrease 178 by 20%,142.4
+809,word_problems,A meeting starts at 11:00 and lasts 3 hours. At what hour does it end? (24-hour format),14.0
+810,arithmetic,What is 87 + 84?,171.0
+811,geometry,What is the area of a rectangle with width 24 and height 3?,72.0
+812,algebra,Find the positive value of x where x² = 64,8.0
+813,arithmetic,Calculate 29 - 18,11.0
+814,word_problems,A meeting starts at 9:00 and lasts 5 hours. At what hour does it end? (24-hour format),14.0
+815,word_problems,Sarah has $213. She spends $27. How much money does she have left?,186.0
+816,arithmetic,Divide 817 by 19,43.0
+817,word_problems,John is 32 years old now. How old was he 13 years ago?,19.0
+818,word_problems,A meeting starts at 14:00 and lasts 8 hours. At what hour does it end? (24-hour format),22.0
+819,algebra,"If x + y = 14 and x - y = 0, what is x?",7.0
+820,fractions,What is 1/5 of 112?,22.4
+821,fractions,What is 2/2 - 1/2? (decimal form),0.5
+822,fractions,What is 3/5 + 4/5? (decimal form),1.4
+823,algebra,Solve for x: 6x + -11 = -59,-8.0
+824,percentage,What is 15% of 438?,65.7
+825,geometry,What is the area of a circle with radius 9? (use π ≈ 3.14),254.34
+826,arithmetic,Calculate 1 + 39 - 7,33.0
+827,word_problems,John is 29 years old now. How old was he 11 years ago?,18.0
+828,percentage,What is 84% of 179?,150.36
+829,word_problems,Sarah has $337. She spends $268. How much money does she have left?,69.0
+830,geometry,What is the area of a circle with radius 1? (use π ≈ 3.14),3.14
+831,arithmetic,Calculate 36 - 60,-24.0
+832,algebra,Find the positive value of x where x² = 196,14.0
+833,geometry,What is the area of a circle with radius 15? (use π ≈ 3.14),706.5
+834,fractions,What is 3/4 of 85?,63.75
+835,word_problems,A meeting starts at 11:00 and lasts 6 hours. At what hour does it end? (24-hour format),17.0
+836,algebra,Solve for x: 9x + -3 = 69,8.0
+837,arithmetic,What is 56 × 9?,504.0
+838,algebra,Solve for x: 5x + -4 = 46,10.0
+839,percentage,Decrease 51 by 25%,38.25
+840,word_problems,Sarah has $87. She spends $67. How much money does she have left?,20.0
+841,word_problems,A car travels at 49 km/h for 2 hours. What distance does it cover?,98.0
+842,algebra,"If x + y = 6 and x - y = 2, what is x?",4.0
+843,word_problems,A meeting starts at 11:00 and lasts 6 hours. At what hour does it end? (24-hour format),17.0
+844,arithmetic,What is (8 + 2) × 6?,60.0
+845,geometry,What is the circumference of a circle with radius 12? (use π ≈ 3.14),75.36
+846,geometry,What is the volume of a cube with side length 8?,512.0
+847,arithmetic,Calculate 44 + 47 - 5,86.0
+848,arithmetic,What is (28 + 18) × 2?,92.0
+849,arithmetic,Calculate 8 + 25 - 3,30.0
+850,geometry,"What is the volume of a rectangular prism with length 8, width 2, and height 4?",64.0
+851,fractions,What is 2/5 of 80?,32.0
+852,percentage,279 is what percent of 324?,86.0
+853,arithmetic,Calculate 5 + 44 - 5,44.0
+854,arithmetic,What is 93 + 93?,186.0
+855,arithmetic,Calculate 65 - 14,51.0
+856,fractions,What is 1/2 × 7? (decimal form),3.5
+857,fractions,What is 6/4 - 4/4? (decimal form),0.5
+858,geometry,What is the area of a rectangle with width 8 and height 27?,216.0
+859,fractions,What is 3/4 of 65?,48.75
+860,geometry,What is the area of a circle with radius 14? (use π ≈ 3.14),615.44
+861,percentage,Decrease 39 by 10%,35.1
+862,arithmetic,What is (10 + 35) × 2?,90.0
+863,word_problems,Sarah has $210. She spends $55. How much money does she have left?,155.0
+864,percentage,69 is what percent of 90?,77.0
+865,geometry,What is the area of a triangle with base 30 and height 33?,495.0
+866,algebra,Find the positive value of x where x² = 36,6.0
+867,word_problems,Sarah has $412. She spends $117. How much money does she have left?,295.0
+868,algebra,Solve for x: 9x + 2 = 29,3.0
+869,algebra,"If x + y = 15 and x - y = 3, what is x?",9.0
+870,percentage,Increase 130 by 50%,195.0
+871,algebra,"If x + y = 19 and x - y = -1, what is x?",9.0
+872,word_problems,A car travels at 34 km/h for 7 hours. What distance does it cover?,238.0
+873,geometry,"What is the volume of a rectangular prism with length 2, width 8, and height 2?",32.0
+874,algebra,Solve for x: 8x + -12 = 20,4.0
+875,geometry,"What is the volume of a rectangular prism with length 8, width 5, and height 9?",360.0
+876,percentage,What is 64% of 392?,250.88
+877,fractions,What is 11/5 - 3/5? (decimal form),1.6
+878,arithmetic,Divide 377 by 13,29.0
+879,word_problems,A car travels at 67 km/h for 3 hours. What distance does it cover?,201.0
+880,geometry,"What is the volume of a rectangular prism with length 3, width 8, and height 9?",216.0
+881,fractions,What is 1/4 + 2/4? (decimal form),0.75
+882,fractions,What is 4/5 × 3? (decimal form),2.4
+883,percentage,What is 46% of 413?,189.98
+884,geometry,What is the perimeter of a rectangle with width 4 and height 28?,64.0
+885,fractions,What is 3/5 × 9? (decimal form),5.4
+886,word_problems,Sarah has $191. She spends $117. How much money does she have left?,74.0
+887,fractions,What is 2/4 × 6? (decimal form),3.0
+888,word_problems,Sarah has $188. She spends $21. How much money does she have left?,167.0
+889,fractions,What is 1/3 + 1/3? (decimal form),0.67
+890,word_problems,John is 21 years old now. How old was he 6 years ago?,15.0
+891,arithmetic,What is (7 + 44) × 10?,510.0
+892,percentage,Increase 109 by 25%,136.25
+893,geometry,What is the area of a triangle with base 27 and height 37?,499.5
+894,geometry,What is the area of a rectangle with width 29 and height 3?,87.0
+895,geometry,What is the perimeter of a rectangle with width 28 and height 12?,80.0
+896,geometry,What is the perimeter of a rectangle with width 17 and height 19?,72.0
+897,fractions,What is 2/4 of 165?,82.5
+898,algebra,Find the positive value of x where x² = 1,1.0
+899,fractions,What is 1/2 × 6? (decimal form),3.0

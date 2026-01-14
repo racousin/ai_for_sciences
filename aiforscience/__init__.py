@@ -12,7 +12,6 @@ from .visualization import (
     compare_tokenizers,
     tokenizer_stats,
     plot_similarity_matrix,
-    plot_embeddings_umap,
     plot_embeddings_tsne,
     print_tokenization_example,
 )
@@ -53,7 +52,6 @@ __all__ = [
     "compare_tokenizers",
     "tokenizer_stats",
     "plot_similarity_matrix",
-    "plot_embeddings_umap",
     "plot_embeddings_tsne",
     "print_tokenization_example",
     # Display
