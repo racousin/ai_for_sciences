@@ -253,3 +253,224 @@ def plot_embeddings_2d(embeddings_2d, labels, categories=None, title="Embeddings
 
     plt.tight_layout()
     return fig
+
+
+def visualize_tokens(text, tokenizer, show_ids=True, max_tokens=20, title=None):
+    """
+    Visualize tokenization of a text with colored boxes.
+
+    Args:
+        text: Input text string
+        tokenizer: Hugging Face tokenizer
+        show_ids: Whether to show token IDs below tokens
+        max_tokens: Maximum tokens to display
+        title: Optional title (defaults to tokenizer name)
+
+    Returns:
+        fig: matplotlib figure
+    """
+    import matplotlib.patches as mpatches
+
+    # Tokenize
+    tokens = tokenizer.tokenize(text)
+    token_ids = tokenizer.encode(text, add_special_tokens=False)
+
+    n_show = min(len(tokens), max_tokens)
+    height = 3.5 if show_ids else 2.5
+
+    fig, ax = plt.subplots(figsize=(14, height))
+    ax.set_xlim(0, 12)
+    ax.set_ylim(0, height)
+    ax.axis('off')
+
+    # Title
+    if title is None:
+        title = getattr(tokenizer, 'name_or_path', 'Tokenizer')
+    ax.text(0.1, height - 0.4, f'{title}', fontsize=12, fontweight='bold')
+    ax.text(0.1, height - 0.8, f'"{text[:60]}{"..." if len(text) > 60 else ""}"',
+            fontsize=9, style='italic', color='gray')
+
+    # Draw tokens
+    colors = plt.cm.Pastel1(np.linspace(0, 1, min(n_show, 9)))
+    x_pos = 0.1
+    y_token = 1.4 if show_ids else 0.8
+
+    for i in range(n_show):
+        # Clean token display (handle GPT-2 Ġ and other markers)
+        display = tokens[i].replace('Ġ', '▁').replace('</w>', '').replace('##', '')
+        if display == ' ' or display == '':
+            display = '▁'
+
+        width = max(0.4, len(display) * 0.12 + 0.2)
+
+        if x_pos + width > 11.5:
+            break
+
+        # Token box
+        rect = mpatches.FancyBboxPatch(
+            (x_pos, y_token), width, 0.7,
+            boxstyle="round,pad=0.03",
+            facecolor=colors[i % len(colors)],
+            edgecolor='gray', linewidth=0.8
+        )
+        ax.add_patch(rect)
+        ax.text(x_pos + width/2, y_token + 0.35, display,
+                fontsize=9, ha='center', va='center', fontweight='bold')
+
+        # Token ID below
+        if show_ids:
+            ax.text(x_pos + width/2, y_token - 0.3, str(token_ids[i]),
+                    fontsize=7, ha='center', va='center', color='gray')
+
+        x_pos += width + 0.08
+
+    # Show remaining count
+    if len(tokens) > n_show:
+        ax.text(x_pos + 0.1, y_token + 0.35, f'... +{len(tokens) - n_show}',
+                fontsize=9, color='gray', va='center')
+
+    # Stats
+    stats = f'{len(tokens)} tokens | {len(text)} chars | {len(text)/len(tokens):.1f} chars/token'
+    ax.text(0.1, 0.2, stats, fontsize=9, color='gray')
+
+    plt.tight_layout()
+    return fig
+
+
+def compare_tokenizers(text, tokenizers, max_tokens=15):
+    """
+    Compare multiple tokenizers on the same text.
+
+    Args:
+        text: Input text string
+        tokenizers: Dict of {name: tokenizer} to compare
+        max_tokens: Maximum tokens to display per tokenizer
+
+    Returns:
+        fig: matplotlib figure
+    """
+    import matplotlib.patches as mpatches
+
+    n = len(tokenizers)
+    fig, axes = plt.subplots(n, 1, figsize=(14, 1.8 * n + 0.8))
+    if n == 1:
+        axes = [axes]
+
+    fig.suptitle(f'Tokenizer Comparison: "{text[:50]}{"..." if len(text) > 50 else ""}"',
+                 fontsize=11, fontweight='bold')
+
+    colormaps = ['Blues', 'Greens', 'Oranges', 'Purples', 'Reds']
+
+    for idx, (name, tokenizer) in enumerate(tokenizers.items()):
+        ax = axes[idx]
+        tokens = tokenizer.tokenize(text)
+        n_show = min(len(tokens), max_tokens)
+
+        ax.set_xlim(0, 12)
+        ax.set_ylim(0, 1.5)
+        ax.axis('off')
+
+        # Label
+        ax.text(0, 1.2, f'{name} ({len(tokens)} tokens)', fontsize=10, fontweight='bold')
+
+        # Draw tokens
+        cmap = plt.cm.get_cmap(colormaps[idx % len(colormaps)])
+        x_pos = 0
+
+        for i in range(n_show):
+            display = tokens[i].replace('Ġ', '▁').replace('</w>', '').replace('##', '')
+            if not display:
+                display = '▁'
+
+            width = max(0.35, len(display) * 0.11 + 0.18)
+            if x_pos + width > 11.5:
+                break
+
+            rect = mpatches.FancyBboxPatch(
+                (x_pos, 0.3), width, 0.7,
+                boxstyle="round,pad=0.02",
+                facecolor=cmap(0.3 + 0.4 * (i % 2)),
+                edgecolor='gray', linewidth=0.5
+            )
+            ax.add_patch(rect)
+            ax.text(x_pos + width/2, 0.65, display,
+                    fontsize=8, ha='center', va='center')
+            x_pos += width + 0.05
+
+        if len(tokens) > n_show:
+            ax.text(x_pos + 0.1, 0.65, f'...+{len(tokens)-n_show}',
+                    fontsize=8, color='gray')
+
+    plt.tight_layout()
+    return fig
+
+
+def tokenizer_stats(tokenizers, texts=None):
+    """
+    Display statistics for one or more tokenizers.
+
+    Args:
+        tokenizers: Dict of {name: tokenizer} or single tokenizer
+        texts: Optional list of texts to compute token statistics
+
+    Returns:
+        fig: matplotlib figure
+    """
+    # Handle single tokenizer
+    if not isinstance(tokenizers, dict):
+        tokenizers = {'Tokenizer': tokenizers}
+
+    n_tokenizers = len(tokenizers)
+
+    if texts is None:
+        # Just show vocabulary sizes
+        fig, ax = plt.subplots(figsize=(10, 5))
+
+        names = list(tokenizers.keys())
+        vocab_sizes = [t.vocab_size for t in tokenizers.values()]
+
+        colors = plt.cm.Set2(np.linspace(0, 1, n_tokenizers))
+        bars = ax.bar(names, vocab_sizes, color=colors, edgecolor='gray')
+
+        ax.set_ylabel('Vocabulary Size', fontsize=11)
+        ax.set_title('Tokenizer Vocabulary Comparison', fontsize=12, fontweight='bold')
+        ax.grid(True, alpha=0.3, axis='y')
+
+        # Add value labels
+        for bar, val in zip(bars, vocab_sizes):
+            ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + max(vocab_sizes)*0.01,
+                    f'{val:,}', ha='center', va='bottom', fontsize=9)
+
+        plt.tight_layout()
+        return fig
+
+    # Compare on texts
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+    # Left: Vocabulary sizes
+    ax1 = axes[0]
+    names = list(tokenizers.keys())
+    vocab_sizes = [t.vocab_size for t in tokenizers.values()]
+    colors = plt.cm.Set2(np.linspace(0, 1, n_tokenizers))
+
+    ax1.bar(names, vocab_sizes, color=colors, edgecolor='gray')
+    ax1.set_ylabel('Vocabulary Size')
+    ax1.set_title('Vocabulary Size', fontsize=11, fontweight='bold')
+    ax1.grid(True, alpha=0.3, axis='y')
+    ax1.tick_params(axis='x', rotation=15)
+
+    # Right: Average tokens per text
+    ax2 = axes[1]
+    avg_tokens = []
+    for name, tokenizer in tokenizers.items():
+        token_counts = [len(tokenizer.tokenize(t)) for t in texts]
+        avg_tokens.append(np.mean(token_counts))
+
+    ax2.bar(names, avg_tokens, color=colors, edgecolor='gray')
+    ax2.set_ylabel('Average Tokens')
+    ax2.set_title(f'Avg Tokens per Text (n={len(texts)})', fontsize=11, fontweight='bold')
+    ax2.grid(True, alpha=0.3, axis='y')
+    ax2.tick_params(axis='x', rotation=15)
+
+    plt.tight_layout()
+    return fig

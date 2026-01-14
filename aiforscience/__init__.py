@@ -8,6 +8,9 @@ from .visualization import (
     plot_nonlinear_data,
     plot_attention_weights,
     plot_embeddings_2d,
+    visualize_tokens,
+    compare_tokenizers,
+    tokenizer_stats,
 )
 
 from .display import (
@@ -31,6 +34,9 @@ __all__ = [
     "plot_nonlinear_data",
     "plot_attention_weights",
     "plot_embeddings_2d",
+    "visualize_tokens",
+    "compare_tokenizers",
+    "tokenizer_stats",
     # Display
     "print_model_params",
     "print_device_comparison",
