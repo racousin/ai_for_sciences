@@ -13,6 +13,7 @@ from .visualization import (
     tokenizer_stats,
     plot_similarity_matrix,
     plot_embeddings_tsne,
+    plot_embeddings_pca,
     print_tokenization_example,
 )
 
@@ -53,6 +54,7 @@ __all__ = [
     "tokenizer_stats",
     "plot_similarity_matrix",
     "plot_embeddings_tsne",
+    "plot_embeddings_pca",
     "print_tokenization_example",
     # Display
     "print_model_params",

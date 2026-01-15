@@ -569,6 +569,64 @@ def plot_embeddings_tsne(embeddings, labels=None, categories=None, title="t-SNE 
     return fig
 
 
+def plot_embeddings_pca(embeddings, labels=None, categories=None, title="PCA Projection",
+                        figsize=(10, 8), point_size=60, alpha=0.7, annotate=False):
+    """
+    Plot embeddings using PCA dimensionality reduction.
+
+    Args:
+        embeddings: numpy array of shape (n_samples, embedding_dim)
+        labels: Optional list of text labels for annotation
+        categories: Optional list of category names for coloring
+        title: Plot title
+        figsize: Figure size
+        point_size: Size of scatter points
+        alpha: Transparency
+        annotate: Whether to add text annotations
+
+    Returns:
+        fig: matplotlib figure
+    """
+    from sklearn.decomposition import PCA
+
+    # Reduce to 2D
+    reducer = PCA(n_components=2, random_state=42)
+    embeddings_2d = reducer.fit_transform(embeddings)
+
+    fig, ax = plt.subplots(figsize=figsize)
+
+    if categories is not None:
+        unique_cats = list(set(categories))
+        colors = plt.cm.tab10(np.linspace(0, 1, min(len(unique_cats), 10)))
+        cat_to_color = {cat: colors[i % len(colors)] for i, cat in enumerate(unique_cats)}
+
+        for cat in unique_cats:
+            mask = [c == cat for c in categories]
+            points = embeddings_2d[np.array(mask)]
+            ax.scatter(points[:, 0], points[:, 1], c=[cat_to_color[cat]],
+                      label=cat, s=point_size, alpha=alpha)
+
+        ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    else:
+        ax.scatter(embeddings_2d[:, 0], embeddings_2d[:, 1], s=point_size, alpha=alpha)
+
+    # Add labels if requested
+    if annotate and labels is not None:
+        for i, label in enumerate(labels):
+            ax.annotate(label, (embeddings_2d[i, 0], embeddings_2d[i, 1]),
+                       xytext=(5, 5), textcoords='offset points', fontsize=8)
+
+    # Add explained variance info
+    var_explained = reducer.explained_variance_ratio_
+    ax.set_xlabel(f'PC 1 ({var_explained[0]:.1%} var)', fontsize=11)
+    ax.set_ylabel(f'PC 2 ({var_explained[1]:.1%} var)', fontsize=11)
+    ax.set_title(title, fontsize=12, fontweight='bold')
+    ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    return fig
+
+
 def print_tokenization_example(text, tokenizer, name=None, max_tokens=20):
     """
     Print a simple tokenization example showing tokens and IDs.
