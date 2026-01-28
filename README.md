@@ -91,6 +91,7 @@ ai_for_sciences/
 │   └── data/               # Datasets
 ├── day3/
 │   ├── tp1.ipynb           # Transfer learning (BloodMNIST)
+│   ├── tp1_solutions.ipynb # Solutions
 │   ├── tp2.ipynb           # Object detection (YOLO)
 │   └── tp3_bonus.ipynb     # Generative models (DCGAN)
 └── pyproject.toml
