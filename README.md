@@ -58,6 +58,7 @@ pip install git+https://github.com/racousin/ai_for_sciences.git
 | Notebook | Topic | Colab Link |
 |----------|-------|------------|
 | `day3/tp1.ipynb` | Transfer Learning for Medical Image Classification | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/racousin/ai_for_sciences/blob/main/day3/tp1.ipynb) |
+| `day3/tp1_solutions.ipynb` | Solutions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/racousin/ai_for_sciences/blob/main/day3/tp1_solutions.ipynb) |
 | `day3/tp2.ipynb` | Object Detection with YOLO | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/racousin/ai_for_sciences/blob/main/day3/tp2.ipynb) |
 | `day3/tp3_bonus.ipynb` | **Bonus:** Face Generation with DCGAN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/racousin/ai_for_sciences/blob/main/day3/tp3_bonus.ipynb) |
 
